@@ -1,0 +1,15 @@
+📁 LOGO FOLDER
+===============
+
+Place your logo image file here!
+
+Examples:
+- logo.png
+- logo.jpg  
+- logo.svg
+- logo-white.png
+
+Then update components/layout/Header.tsx to use it.
+
+See HOW_TO_ADD_LOGO.md for detailed instructions.
+

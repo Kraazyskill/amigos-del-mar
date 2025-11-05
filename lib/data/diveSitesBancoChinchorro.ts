@@ -1,0 +1,203 @@
+import { Language } from '../translations'
+
+export interface DiveSite {
+  name: string
+  depth: string
+  level: string
+  description: string
+  marine: string
+  season: string
+  image: string
+}
+
+export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
+  if (language === 'es') {
+    return [
+      {
+        name: 'Aquario 1 & 2',
+        depth: '14m prom (máx 18m)',
+        level: 'Todos los Niveles',
+        description: 'Estos son algunos de los sitios de buceo más bonitos de todo Banco Chinchorro. Al descender te preguntarás hacia dónde mirar, rodeado de un paraíso de coral. Se encuentran más corales blandos aquí que en cualquier otro lugar de la costa caribeña y también hay una abundancia de abanicos de mar, cuerno de alce, coral de fuego y coral cerebro. Y no es solo el coral lo que impresionará; ¡hay peces literalmente en todas partes! Desde cardúmenes de tangs azules y pargos, grandes langostas y barracudas merodeando, hasta enormes morenas verdes sobresaliendo de sus cuevas y pequeñas lenguas de flamenco hermosas aferrándose a abanicos. Los tiburones nodriza y las rayas águila a menudo flotan sobre el fondo arenoso y los buzos con suerte incluso podrían ver algunos delfines pasando.',
+        marine: 'Tiburones nodriza, rayas águila, morenas, langostas, tangs azules, pargos, barracudas',
+        season: 'Visibilidad: 20-30m',
+        image: '/dive-sites/banco-chinchorro/aquario.jpg',
+      },
+      {
+        name: 'Baliza',
+        depth: 'Máx 20m',
+        level: 'Intermedio',
+        description: 'Esta es una inmersión particularmente especial para aquellos que aman los tiburones. Usualmente dos o tres tiburones nodriza se acercan a los buzos en su descenso y permanecerán con el grupo durante toda la inmersión; una oportunidad fantástica para ver realmente bien a estas criaturas fascinantes. La inmersión comienza en un área arenosa dirigiéndose al sur sobre el arrecife, que está dividido en tres secciones diferentes. La profundidad máxima es de unos 20 metros pero ni siquiera es necesario ir tan profundo ya que tanto las secciones poco profundas como las profundas son igualmente impresionantes con enormes esponjas amarillas y cardúmenes de jureles y sardinas. También es probable que veas meros, peces loro azules y tortugas.',
+        marine: 'Tiburones nodriza, meros, peces loro azules, tortugas, jureles, sardinas',
+        season: 'Profundidad: Poco profundo y profundo igualmente impresionantes',
+        image: '/dive-sites/banco-chinchorro/baliza.jpg',
+      },
+      {
+        name: 'Gata',
+        depth: 'Máx 20m',
+        level: 'Intermedio',
+        description: 'Gata se refiere al nombre español para los tiburones nodriza, que son el punto culminante de este sitio de buceo. A diferencia de todos los demás lugares, los tiburones nodriza son muy activos y siguen a los buzos hasta el final de la inmersión, acercándose al grupo con curiosidad y haciendo giros suaves para que puedas experimentar toda su gracia, fuerza y belleza de una manera espectacular. El sitio está dividido en tres secciones de arrecife diferentes, cruzando dos pendientes arenosas para navegar entre ellas. Los corales están realmente saludables y entre los tiburones nodriza, puedes esperar encontrar peces de arrecife en todos los diferentes colores, formas y tamaños, así como meros negros, tortugas carey y verdes, morenas, langostas gigantes. Un enorme cardumen de sardinas pasa el rato en el tercer arrecife, que es todo un espectáculo.',
+        marine: 'Tiburones nodriza activos, meros negros, tortugas carey y verdes, morenas, langostas gigantes, cardúmenes de sardinas',
+        season: 'Profundidad máx: 20m',
+        image: '/dive-sites/banco-chinchorro/gata.jpg',
+      },
+      {
+        name: 'El Solitario',
+        depth: '20-26m (pináculo a 35m)',
+        level: 'Avanzado',
+        description: 'El nombre de este sitio de buceo significa "solitario" en español, lo cual es apropiado ya que la inmersión incluye atravesar entre dos arrecifes diferentes a través de una roca de coral gigante solitaria ubicada entre los dos. Para los buzos que les gusta usar sus brújulas, esta es una gran oportunidad para practicar habilidades de navegación. La inmersión comienza a una profundidad de entre 20 y 24 metros en el primer arrecife, que cuenta con corales increíbles y vida marina. Al llegar a la arena, nadando hacia el noroeste hacia las profundidades sobre la arena, los buzos pronto notarán una enorme sombra que se hace cada vez más grande. Finalmente, aparece una roca enorme, comenzando a 15 metros y cayendo hasta la arena a 35 metros, que es un lugar de descanso favorito para rayas y tiburones nodriza. Después de rodear el pináculo, los buzos se dirigen al noreste para llegar a la segunda pared.',
+        marine: 'Tiburones de arrecife, rayas, tiburones nodriza, meros, pargos, tortugas',
+        season: 'Profundidad máx: 26m',
+        image: '/dive-sites/banco-chinchorro/el%20solitario%20.png',
+      },
+      {
+        name: 'Gonzales 1 & 2',
+        depth: '12-24m (pináculo a 50m)',
+        level: 'Principiante a Avanzado',
+        description: 'Justo frente a Cayo Centro, la masa de tierra principal de Banco Chinchorro, está Punta González. Esta es una inmersión muy diversa con profundidades que van desde 8 hasta 35 metros. Manteniéndose en el sitio principal, los buzos generalmente bucearán entre 12 y 24 metros, haciéndolo perfecto para principiantes. Sin embargo, en los meses de verano cuando la corriente no es tan fuerte, los buzos avanzados pueden disfrutar la oportunidad de ir a las partes más profundas donde un enorme pináculo submarino es visible elevándose desde unos 50 hasta 30 metros de profundidad. La topografía del arrecife varía enormemente, con algunas de las formaciones de coral más bellas que Chinchorro tiene para ofrecer, hechas aún más espectaculares por la visibilidad de 20 metros más. Los buzos nadarán sobre áreas arenosas, a través de cañones, pasando pináculos y a lo largo de grietas en el arrecife.',
+        marine: 'Rayas águila, tortugas, tiburones nodriza, enormes esponjas, abanicos gorgonios',
+        season: 'Visibilidad: 20m+',
+        image: '/dive-sites/banco-chinchorro/gonzales.jpg',
+      },
+      {
+        name: 'Gran Mure',
+        depth: '15-28m (pared a 60m)',
+        level: 'Avanzado',
+        description: 'Para aquellos que aman la emoción de una inmersión en pared increíble, Gran Mure no debe perderse. El arrecife superior comienza a solo 15 metros de profundidad y desciende hasta donde comienza la pared a 20 metros, cayendo a unos impresionantes 60 metros en algunas partes. En Gran Mure todo es un poco más grande que en cualquier otro lugar de Chinchorro. Nadarás junto a enormes esponjas de barril, algunas de las cuales tienen hasta tres metros de altura; así como hermosas esponjas tubulares amarillas gigantes, que crecen para tener miles de años. Otro punto culminante son los enormes cardúmenes de peces bonnetmouth y boga que son verdaderamente increíbles de ver - miles de peces pequeños moviéndose juntos frenéticamente en lo que se conoce como una bola de cebo. Esto puede atraer todo tipo de depredadores: meros, barracudas, jureles, trevally y jureles de ojo de caballo.',
+        marine: 'Tiburones nodriza, tiburones de arrecife, tortugas, enormes meros negros, meros tigre y Nassau, rayas, pargos, langostas, bolas de cebo',
+        season: 'Profundidad máx: 28m',
+        image: '/dive-sites/banco-chinchorro/gran-mure.jpg',
+      },
+      {
+        name: 'Reina del Sur',
+        depth: '15m prom (máx 20m)',
+        level: 'Intermedio',
+        description: 'Traducido al español, este sitio significa Reina del Sur y los buzos entenderán por qué al deslizarse a través de más de un kilómetro de coloridos jardines de coral. La profundidad promedio de unos 15 metros significa que es bastante inusual encontrar enormes esponjas de barril y coral negro a estas profundidades - un indicador de que este es un sistema de arrecife muy saludable. También hay una cantidad increíble de vida marina para disfrutar incluyendo tortugas carey, verdes y caguama, que se pueden ver entrando y saliendo de los cañones y nadando felizmente sobre el arrecife. Los cardúmenes de sardinas son increíbles de ver mientras bailan y brillan en la luz, siempre atentos a los depredadores como jureles, sábalos e incluso pez pompano africano. A medida que la inmersión continúa hacia el norte, los buzos notarán que se aproximan pináculos y también que el arrecife baja más profundo a más de 30 metros.',
+        marine: 'Tortugas carey, verdes y caguama, enormes meros negros, tiburones nodriza y de arrecife, cardúmenes de sardinas, jureles, sábalos',
+        season: 'Duración: Aproximadamente 1 hora',
+        image: '/gallery/turtleinreef.jpg',
+      },
+      {
+        name: 'SS 40 Cañones',
+        depth: '5m prom (máx 8m)',
+        level: 'Todos los Niveles',
+        description: 'Este naufragio fue una vez un galeón español y parte de una armada de 17 barcos en total. Este barco en particular se retrasó al salir del puerto en Cartagena, Colombia en su viaje hacia La Habana, Cuba. Tratando de alcanzar al resto de la armada que se dirigía alrededor de la península de Yucatán por la noche, el navegante y el marinero vigía no lograron ver el atolón en las condiciones de oscuridad total. Su destino fue decidido cuando encallaron en Chinchorro en 1648. Este es un sitio de buceo soberbio que te llevará casi 500 años atrás en el tiempo. 36 cañones están dispersos en un área de 30 por diez metros y un ancla gigante de hierro fundido de doble uña se encuentra a unos 40 metros al oeste de los cañones. Las piedras de lastre e incluso pequeñas partes de madera todavía son visibles y mucho de ello está incrustado con capas de coral. Este naufragio es parte del museo submarino en Banco Chinchorro.',
+        marine: 'Peces de arrecife tropicales en jardines de coral',
+        season: 'Visibilidad: Fantástica debido a la poca profundidad',
+        image: '/dive-sites/banco-chinchorro/40-cannons.jpg',
+      },
+      {
+        name: 'SS Inger Skou',
+        depth: 'Varias profundidades',
+        level: 'Intermedio',
+        description: 'Ubicado al noreste de Cayo Centro, este naufragio fue una vez un barco de vapor danés del siglo XIX. Era un barco enorme y estaba transportando maquinaria pesada y metal cuando encalló en Banco Chinchorro en 1955. Se sabe que en su último viaje iba de norte a sur, pero no sabemos por qué terminó hundido en Banco Chinchorro. Es fácilmente el mejor naufragio para explorar en el área debido al tamaño y la cantidad de artefactos, así como la belleza del arrecife circundante. Buceando en este sitio, te encontrarás rodeado de majestuoso escenario submarino industrial habitado por pargos, peces loro y peces cerdo. Generalmente comenzamos la inmersión en una sección más profunda, flotando entre cañones con enormes abanicos de mar y gorgonias siendo barridos de lado a lado con el oleaje.',
+        marine: 'Rayas águila, tiburones nodriza, tiburones punta negra, pargos, peces loro, peces cerdo',
+        season: 'Gran visibilidad',
+        image: '/dive-sites/banco-chinchorro/inger-skou.jpg',
+      },
+      {
+        name: 'Teresitas',
+        depth: 'Máx 25m',
+        level: 'Todos los Niveles',
+        description: 'Esta es una hermosa inmersión en pared con una profundidad máxima de unos 25 metros, sin embargo la inmersión comienza superficial dando a los buzos la oportunidad de ajustarse y disfrutar viendo los enormes caracoles en la arena, notando sus muchos rastros. Aproximadamente a la mitad de la inmersión llegarás a la parte más profunda de la pared donde a menudo se encuentran criaturas más pequeñas, como cangrejos y camarones, así como meros y peces loro, nadando entre hermosas formaciones de coral. El grupo subirá hacia el final de la inmersión para disfrutar nadando sobre el arrecife, repleto de cardúmenes de peces de arrecife tanto juveniles como adultos. También hay una buena posibilidad de ver tiburones nodriza, tortugas y barracudas.',
+        marine: 'Caracoles, cangrejos, camarones, meros, peces loro, tiburones nodriza, tortugas, barracudas, peces de arrecife juveniles',
+        season: 'Excelente para coral y diversidad marina',
+        image: '/dive-sites/banco-chinchorro/teresitas.jpg',
+      },
+    ]
+  }
+
+  // English
+  return [
+    {
+      name: 'Aquario 1 & 2',
+      depth: '14m avg (max 18m)',
+      level: 'All Levels',
+      description: 'These are some of the prettiest dive sites in all of Banco Chinchorro. As you descend you\'ll wonder which way to look, surrounded by a coral wonderland. More soft corals are found here than anywhere else on the Caribbean coastline and there is also an abundance of sea fans, elk horn, fire and brain coral. And it\'s not just the coral that will impress; there are fish literally everywhere! From schools of blue tangs and snappers, big lobsters and barracudas prowling, to huge green moray eels protruding from their caves and tiny beautiful flamingo tongues clinging to fans. Nurse sharks and eagle rays often hover over the sandy bottom and lucky divers might even spot some dolphins passing by.',
+      marine: 'Nurse sharks, eagle rays, moray eels, lobsters, blue tangs, snappers, barracudas',
+      season: 'Visibility: 20-30m',
+      image: '/dive-sites/banco-chinchorro/aquario.jpg',
+    },
+    {
+      name: 'Baliza',
+      depth: 'Max 20m',
+      level: 'Intermediate',
+      description: 'This is a particularly special dive for those who love sharks. Usually two or three nurse sharks approach divers on their descent and will stay with the group for the duration of the dive; a fantastic opportunity to get a really good look at these fascinating creatures. The dive starts in a sandy area heading south over the reef, which is split into three different sections. The maximum depth is about 20 metres but it\'s not even necessary to go this deep as both the shallow and deep sections are equally impressive with huge yellow sponges and schools of jacks and sardines. You\'ll also likely see groupers, blue parrotfish, and turtles.',
+      marine: 'Nurse sharks, groupers, blue parrotfish, turtles, jacks, sardines',
+      season: 'Depth: Both shallow and deep equally impressive',
+      image: '/dive-sites/banco-chinchorro/baliza.jpg',
+    },
+    {
+      name: 'Gata',
+      depth: 'Max 20m',
+      level: 'Intermediate',
+      description: 'Gata refers to the Spanish name for nurse sharks, which are the highlight of this dive site. Unlike in all other places, the nurse sharks are highly active and follow the divers around until the end of dive, approaching the group curiously and making gentle turns so you can experience all their grace, strength and beauty in a spectacular way. The site is divided into three different reef sections, crossing over two sandy slopes to navigate between them. The corals are really healthy and among the nurse sharks, you can expect to encounter reef fish in all different colours, shapes, and sizes, as well as black groupers, hawksbill and green turtles, moray eels, giant lobsters. A huge school of sardines hang out on the third reef which is quite a spectacle.',
+      marine: 'Active nurse sharks, black groupers, hawksbill & green turtles, moray eels, giant lobsters, sardine schools',
+      season: 'Max depth: 20m',
+      image: '/dive-sites/banco-chinchorro/gata.jpg',
+    },
+    {
+      name: 'El Solitario',
+      depth: '20-26m (pinnacle to 35m)',
+      level: 'Advanced',
+      description: 'The name of this dive site means "lonesome" in Spanish which is fitting as the dive includes traversing between two different reefs via a solitary giant coral rock located between the two. For divers who like to use their compasses this is a great opportunity to practise navigation skills. The dive starts at a depth of between 20 and 24 metres at the first reef, which boasts incredible corals and marine life. When reaching the sand, by swimming north-west out into the depths over the sand, divers will soon notice a huge shadow growing bigger. Finally, a huge rock appears, starting at 15 metres and dropping down to the sand at 35 metres, which is a favourite resting place for rays and nurse sharks. After circling the pinnacle divers head North-East to reach the second wall.',
+      marine: 'Reef sharks, rays, nurse sharks, groupers, snappers, turtles',
+      season: 'Max depth: 26m',
+      image: '/dive-sites/banco-chinchorro/el%20solitario%20.png',
+    },
+    {
+      name: 'Gonzales 1 & 2',
+      depth: '12-24m (pinnacle to 50m)',
+      level: 'Beginner to Advanced',
+      description: 'Right in front of Cayo Centro, the main landmass of Banco Chinchorro, is Punta Gonzalez. This is a hugely diverse dive with depths ranging between 8 and 35 metres. Sticking to the main site divers will usually dive at between 12 and 24 meters making it perfect for beginners. However, in the summer months when the current isn\'t as strong, advanced divers can enjoy the chance to go to the deeper parts where a huge underwater pinnacle is visible rising from about 50 up to 30 metres deep. The reef topography varies greatly, with some of the most beautiful coral formations Chinchorro has to offer, made even more spectacular by the visibility of 20 metres plus. Divers will swim over sandy areas, through canyons, past pinnacles and along cracks in the reef.',
+      marine: 'Eagle rays, turtles, nurse sharks, huge sponges, gorgonian fans',
+      season: 'Visibility: 20m+',
+      image: '/dive-sites/banco-chinchorro/gonzales.jpg',
+    },
+    {
+      name: 'Gran Mure',
+      depth: '15-28m (wall to 60m)',
+      level: 'Advanced',
+      description: 'For those who love the thrill of an amazing wall dive, Gran Mure is not to be missed. The upper reef starts at just 15 metres depth and slopes down to where the wall begins at 20 meters, dropping to a breath-taking 60 metres in some parts. At Gran Mure everything is a bit bigger than anywhere else in Chinchorro. You\'ll swim past enormous barrel sponges, some of which are up to three metres tall; as well as beautiful giant yellow tube sponges, which grow to be thousands of years old. Another highlight are the huge schools of bonnetmouth and boga fish which are truly incredible to see - thousands of small fish moving together frantically in what is known as a bait ball. This can attract all kinds of predators: groupers, barracuda, permit, trevally and horse-eye jacks.',
+      marine: 'Nurse sharks, reef sharks, turtles, huge black groupers, tiger & Nassau groupers, rays, snappers, lobsters, bait balls',
+      season: 'Max depth: 28m',
+      image: '/dive-sites/banco-chinchorro/gran-mure.jpg',
+    },
+    {
+      name: 'Reina del Sur',
+      depth: '15m avg (max 20m)',
+      level: 'Intermediate',
+      description: 'Translated to English, this site means Queen of the South and divers will understand why as they drift through more than a kilometre of colourful coral gardens. The average depth of about 15 metres means it\'s quite unusual to find huge barrel sponges and black coral at these depths - an indicator that this is a very healthy reef system. There\'s also an incredible amount of marine life to enjoy including hawksbill, green, and loggerhead turtles, which can be seen darting in and out of the canyons and swimming happily over the reef. Schools of sardines are amazing to watch as they dance and shimmer in the light, always on the lookout for predators such as jacks, tarpons and even African pompano. As the dive continues north, divers will notice pinnacles approaching and also that the reef drops down deeper to more than 30 metres.',
+      marine: 'Hawksbill, green & loggerhead turtles, huge black groupers, nurse & reef sharks, sardine schools, jacks, tarpons',
+      season: 'Duration: About 1 hour',
+      image: '/gallery/turtleinreef.jpg',
+    },
+    {
+      name: 'SS 40 Cannons',
+      depth: '5m avg (max 8m)',
+      level: 'All Levels',
+      description: 'This shipwreck was once a Spanish galleon and part of an armada of 17 boats in total. This particular ship was delayed leaving port in Cartagena, Colombia on its voyage towards Havana, Cuba. Trying to catch up with the rest of the armada heading around the Yucatán peninsular at night, the navigator and look-out sailor failed to see the atoll in the pitch-black conditions. Their fate was decided as they ran aground in Chinchorro in 1648. This is a superb dive site which will take you back almost 500 years in time. 36 cannons are scattered around an area of 30 by ten metres and a giant cast-iron double-fluke anchor lies some 40 metres west of the cannons. Ballast stones and even small wooden parts are still visible and much of it is encrusted with layers of coral. This shipwreck is part of the underwater museum at Banco Chinchorro.',
+      marine: 'Tropical reef fish in coral gardens',
+      season: 'Visibility: Fantastic due to shallow depth',
+      image: '/dive-sites/banco-chinchorro/40-cannons.jpg',
+    },
+    {
+      name: 'SS Inger Skou',
+      depth: 'Various depths',
+      level: 'Intermediate',
+      description: 'Located north-east of Cayo Centro, this shipwreck was once a Danish steamboat from the 19th century. It was a huge vessel and was transporting heavy machinery and metal when it ran aground in Banco Chinchorro in 1955. It is known that on her last journey she was on route from north to south, but we don\'t know why she ended up sunken at Banco Chinchorro. It\'s easily the best shipwreck to explore in the area due to the size and the number of artifacts, as well as the beauty of the surrounding reef. Diving this site, you\'ll find yourself surrounded by majestic industrial underwater scenery inhabited by snappers, parrotfish, and hogfish. We usually start the dive in a deeper section, hovering in between canyons with huge sea fans and gorgonians being swept from side to side with the swell.',
+      marine: 'Eagle rays, nurse sharks, black tip sharks, snappers, parrotfish, hogfish',
+      season: 'Great visibility',
+      image: '/dive-sites/banco-chinchorro/inger-skou.jpg',
+    },
+    {
+      name: 'Teresitas',
+      depth: 'Max 25m',
+      level: 'All Levels',
+      description: 'This is a beautiful wall dive with a maximum depth of about 25 metres, however the dive starts shallow giving divers a chance to get adjusted and enjoy watching the huge conches in the sand, noticing their many trails. About half way through the dive you\'ll reach the deepest part of the wall where smaller creatures are often found, like crabs and shrimps, as well as groupers and parrot fish, swimming among beautiful coral formations. The group will shallow up towards the end of the dive to enjoy swimming on top of the reef, swarming with schools of both juvenile and adult reef fish. There\'s also a good chance of seeing nurse sharks, turtles and barracudas.',
+      marine: 'Conches, crabs, shrimps, groupers, parrot fish, nurse sharks, turtles, barracudas, juvenile reef fish',
+      season: 'Great for coral and marine diversity',
+      image: '/dive-sites/banco-chinchorro/teresitas.jpg',
+    },
+  ]
+}
+

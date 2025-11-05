@@ -1,0 +1,30 @@
+📸 GALLERY IMAGES FOLDER
+========================
+
+Place all your gallery photos here!
+
+Organize by category (optional):
+- banco-chinchorro/
+  - dive-site-1.jpg
+  - dive-site-2.jpg
+- mahahual/
+  - reef-1.jpg
+  - reef-2.jpg
+- marine-life/
+  - turtle.jpg
+  - fish.jpg
+
+Or just put them all in this folder:
+- photo1.jpg
+- photo2.jpg
+- photo3.jpg
+etc.
+
+Recommended image specs:
+- Format: JPG or PNG
+- Size: 1200x900px (4:3 ratio) or similar
+- File size: Under 500KB (compressed)
+- Quality: High but optimized for web
+
+See HOW_TO_ADD_GALLERY_IMAGES.md for detailed instructions!
+

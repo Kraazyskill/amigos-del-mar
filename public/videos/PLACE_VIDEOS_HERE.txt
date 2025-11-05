@@ -1,0 +1,31 @@
+🎬 VIDEO FILES FOLDER
+=====================
+
+Place your video files here!
+
+Organize by page:
+- home-video.mp4
+- banco-chinchorro-video.mp4
+- mahahual-video.mp4
+- contact-video.mp4
+
+Or organize in folders:
+- home/
+  - hero-video.mp4
+- banco-chinchorro/
+  - dive-video.mp4
+- mahahual/
+  - local-diving.mp4
+
+Recommended video specs:
+- Format: MP4 (H.264 codec)
+- Resolution: 1920x1080 (1080p) or 1280x720 (720p)
+- File size: Under 50MB (compressed)
+- Duration: 30 seconds - 2 minutes
+- Aspect ratio: 16:9
+
+For better performance, also create a thumbnail:
+- home-video-thumbnail.jpg (poster image)
+
+See HOW_TO_ADD_VIDEOS.md for detailed instructions!
+

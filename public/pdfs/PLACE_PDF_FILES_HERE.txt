@@ -1,0 +1,23 @@
+📄 PDF FILES FOLDER
+===================
+
+Place your PDF files here!
+
+Examples:
+- banco-chinchorro-map.pdf
+- mahahual-dive-sites.pdf
+- dive-guide.pdf
+- price-list.pdf
+
+Recommended:
+- Use descriptive names
+- Keep file sizes reasonable (under 5MB)
+- Use lowercase with hyphens
+
+These PDFs can be:
+- Downloaded by visitors
+- Embedded/displayed on pages
+- Linked from buttons
+
+See HOW_TO_ADD_PDFS.md for instructions!
+
