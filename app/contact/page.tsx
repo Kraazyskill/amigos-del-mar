@@ -23,7 +23,7 @@ interface FormErrors {
 }
 
 export default function ContactPage() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -415,11 +415,11 @@ export default function ContactPage() {
                         {t('contact.info.phone')}
                       </h3>
                       <a
-                        href={formatPhone(process.env.NEXT_PUBLIC_CONTACT_PHONE || '+52 984 151 6758')}
+                        href="tel:+529841516758"
                         className="text-ocean-blue hover:text-ocean-turquoise transition-colors"
                         style={{ wordBreak: 'break-all' }}
                       >
-                        {process.env.NEXT_PUBLIC_CONTACT_PHONE || '+52 984 151 6758'}
+                        984-151-6758
                       </a>
                     </div>
                   </div>
@@ -434,11 +434,11 @@ export default function ContactPage() {
                         {t('contact.info.email')}
                       </h3>
                       <a
-                        href={formatEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@amigosdelmar.net')}
+                        href={formatEmail('hola@amigosdelmar.net')}
                         className="text-ocean-blue hover:text-ocean-turquoise transition-colors"
                         style={{ wordBreak: 'break-all' }}
                       >
-                        {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@amigosdelmar.net'}
+                        hola@amigosdelmar.net
                       </a>
                     </div>
                   </div>
@@ -460,10 +460,10 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 rounded-xl overflow-hidden h-64 lg:h-96">
+              {/* Map - Amigos del Mar Location */}
+              <div className="relative bg-gray-200 rounded-xl overflow-hidden h-64 lg:h-96">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119095.58830827795!2d-87.77098843906248!3d18.70850079999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba71278ea36e9%3A0x8b7e1b6e5e3d3d4e!2sMahahual%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15115.409394950379!2d-87.71803766541757!3d18.715427443177774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5b2610bc3f6dc5%3A0xc49f107a194fcfb4!2sAMIGOS%20DEL%20MAR%20MAHAHUAL!5e0!3m2!1sde!2smx!4v1762480152486!5m2!1sde!2smx"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -472,6 +472,15 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                   title={t('contact.map.title')}
                 />
+                {/* Direct link to shop location */}
+                <a 
+                  href="https://maps.app.goo.gl/hUgshYpUu8NxG7QV9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-4 right-4 px-4 py-2 bg-ocean-blue hover:bg-ocean-turquoise text-white text-sm font-medium rounded-lg shadow-lg transition-colors z-10"
+                >
+                  {language === 'es' ? 'Abrir en Google Maps' : 'Open in Google Maps'}
+                </a>
               </div>
             </motion.div>
           </div>

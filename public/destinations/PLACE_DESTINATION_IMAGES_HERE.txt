@@ -1,0 +1,24 @@
+📸 DESTINATION CARD IMAGES
+==========================
+
+Place your destination cover images here!
+
+File names needed:
+- banco-chinchorro-card.jpg
+- mahahual-card.jpg
+
+These appear on the HOME PAGE in the "Our Destinations" section.
+
+Recommended specs:
+- Format: JPG
+- Size: 800-1200px wide
+- Aspect Ratio: 4:3 or 16:9
+- File size: Under 500KB
+- Quality: High, professional
+
+Content suggestions:
+- Banco Chinchorro: Shipwreck, wall dive, dramatic underwater scene
+- Mahahual: Colorful reef, turtles, accessible diving
+
+See instructions in this file's parent folder!
+

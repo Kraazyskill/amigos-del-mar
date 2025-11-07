@@ -18,9 +18,9 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' },
+    { icon: Facebook, href: 'https://www.facebook.com/amigosdelmarmahahual/', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/amigosdelmarscuba?igsh=NWpyOHY1NWNyYmEy', label: 'Instagram' },
+    { icon: Youtube, href: 'https://youtube.com/@amigosdelmarmahahual4846?si=YXDxMfF4ca3Yavn5', label: 'YouTube' },
   ]
 
   const scrollToTop = () => {
@@ -78,21 +78,21 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-ocean-turquoise mt-0.5" style={{ flexShrink: 0 }} />
                 <a
-                  href={formatPhone(process.env.NEXT_PUBLIC_CONTACT_PHONE || '+52 984 151 6758')}
+                  href="tel:+529841516758"
                   className="text-gray-300 hover:text-ocean-turquoise transition-colors text-sm"
                   style={{ wordBreak: 'break-all' }}
                 >
-                  {process.env.NEXT_PUBLIC_CONTACT_PHONE || '+52 984 151 6758'}
+                  984-151-6758
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={20} className="text-ocean-turquoise mt-0.5" style={{ flexShrink: 0 }} />
                 <a
-                  href={formatEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@amigosdelmar.net')}
+                  href={formatEmail('hola@amigosdelmar.net')}
                   className="text-gray-300 hover:text-ocean-turquoise transition-colors text-sm"
                   style={{ wordBreak: 'break-all' }}
                 >
-                  {process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@amigosdelmar.net'}
+                  hola@amigosdelmar.net
                 </a>
               </li>
             </ul>
@@ -123,12 +123,12 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-gray-400 text-sm text-center sm:text-left">
               {t('footer.copyright', { year: currentYear })}
             </p>
             <p className="text-gray-400 text-sm text-center sm:text-right">
-              {t('footer.madeWith')}
+              Website Developed by JMW
             </p>
           </div>
           <button

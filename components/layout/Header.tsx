@@ -63,45 +63,11 @@ export default function Header() {
       }}
     >
       <nav className="container-safe mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 lg:h-32 relative">
-          {/* Mobile Menu Button - Left Side */}
-          <div className="lg:hidden absolute left-0" style={{ flexShrink: 0 }}>
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg hover:bg-white/10 transition-colors text-white"
-              aria-label={isMenuOpen ? t('nav.close') : t('nav.menu')}
-              style={{ flexShrink: 0 }}
-            >
-              {isMenuOpen ? (
-                <X size={24} />
-              ) : (
-                <Menu size={24} />
-              )}
-            </button>
-          </div>
-
-          {/* Desktop Navigation - Left Side */}
-          <div className="hidden lg:flex items-center gap-6">
-            {navLinks.slice(0, 3).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'font-medium transition-colors relative py-2',
-                  pathname === link.href
-                    ? 'text-white border-b-2 border-white'
-                    : 'text-white/90 hover:text-white'
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-
-          {/* Logo - Absolutely Centered */}
+        <div className="flex items-center justify-between h-24 lg:h-32">
+          {/* Logo - Left Side */}
           <Link
             href="/"
-            className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 hover:opacity-90 transition-opacity"
+            className="flex items-center gap-2 hover:opacity-90 transition-opacity z-10"
             style={{ flexShrink: 0 }}
           >
             <Image 
@@ -114,9 +80,9 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation - Right Side */}
-          <div className="hidden lg:flex items-center gap-6">
-            {navLinks.slice(3).map((link) => (
+          {/* Desktop Navigation - Center */}
+          <div className="hidden lg:flex items-center gap-6 absolute left-1/2 -translate-x-1/2">
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -130,8 +96,10 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            
-            {/* Language Toggle */}
+          </div>
+
+          {/* Language Toggle - Right Side (Desktop) */}
+          <div className="hidden lg:flex items-center" style={{ flexShrink: 0 }}>
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-white"
@@ -143,8 +111,9 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Language Toggle - Mobile (Right Side) */}
-          <div className="lg:hidden absolute right-0" style={{ flexShrink: 0 }}>
+          {/* Mobile: Menu Button & Language Toggle */}
+          <div className="flex lg:hidden items-center gap-2">
+            {/* Language Toggle - Mobile */}
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-white"
@@ -153,6 +122,20 @@ export default function Header() {
             >
               <Globe size={20} style={{ flexShrink: 0 }} />
               <span className="font-medium text-sm uppercase">{language}</span>
+            </button>
+            
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 rounded-lg hover:bg-white/10 transition-colors text-white"
+              aria-label={isMenuOpen ? t('nav.close') : t('nav.menu')}
+              style={{ flexShrink: 0 }}
+            >
+              {isMenuOpen ? (
+                <X size={24} />
+              ) : (
+                <Menu size={24} />
+              )}
             </button>
           </div>
         </div>

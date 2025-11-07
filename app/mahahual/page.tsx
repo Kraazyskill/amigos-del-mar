@@ -154,8 +154,43 @@ export default function MahahualPage() {
         </div>
       </section>
 
-      {/* Dive Sites Section */}
+      {/* Dive Spots Overview Section */}
       <section className="py-16 lg:py-24 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold text-ocean-deep text-center mb-8">
+              {language === 'es' ? 'Mapa de Sitios de Buceo Populares' : 'Popular Dive Spots Map'}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-8">
+              {language === 'es' 
+                ? 'Explora nuestros sitios de buceo más populares alrededor de Mahahual' 
+                : 'Explore our most popular dive sites around Mahahual'}
+            </p>
+            
+            {/* Overview Image */}
+            <div className="rounded-xl overflow-hidden shadow-heavy">
+              <img 
+                src="/dive-sites/mahahual/mahahual-dive-map.jpg" 
+                alt={language === 'es' ? 'Mapa de sitios de buceo de Mahahual' : 'Mahahual dive sites map'}
+                className="w-full h-auto"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  display: 'block'
+                }}
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Dive Sites Section */}
+      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -184,9 +219,9 @@ export default function MahahualPage() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Image */}
-                  <div className="relative h-80 lg:h-auto lg:min-h-[400px]">
+                  <div className="relative h-80 lg:h-auto lg:min-h-[450px] bg-gray-100 flex items-center justify-center">
                     <div
-                      className="absolute inset-0 bg-cover bg-center"
+                      className="absolute inset-0 bg-contain bg-center bg-no-repeat"
                       style={{ backgroundImage: `url(${site.image})` }}
                     />
                   </div>

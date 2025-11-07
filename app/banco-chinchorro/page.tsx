@@ -154,8 +154,44 @@ export default function BancoChinchorro() {
         </div>
       </section>
 
+      {/* Additional Dive Spots Available */}
+      <section className="py-12 lg:py-16 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto bg-ocean-light/30 border-2 border-ocean-blue/20 rounded-xl p-8"
+          >
+            <h3 className="text-2xl font-bold text-ocean-deep mb-4 text-center">
+              {language === 'es' ? 'Más Sitios de Buceo Disponibles' : 'More Dive Sites Available'}
+            </h3>
+            <p className="text-gray-700 text-center mb-6">
+              {language === 'es' 
+                ? 'Amigos del Mar también puede organizar inmersiones bajo petición en estos sitios adicionales:' 
+                : 'Amigos del Mar can also arrange dives on request to these additional sites:'}
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {['Amigos Wall Deep', 'Cayo Lobos', 'Dandy', 'El Cornejo', 'Fish Market', 'Two Towers', 'The Maze', 'Paraiso'].map((site) => (
+                <span 
+                  key={site}
+                  className="px-4 py-2 bg-white text-ocean-blue border border-ocean-blue/30 rounded-lg text-sm font-medium shadow-sm"
+                >
+                  {site}
+                </span>
+              ))}
+            </div>
+            <p className="text-gray-600 text-center mt-6 text-sm italic">
+              {language === 'es'
+                ? 'Contacta con nosotros para más información sobre estos sitios especiales'
+                : 'Contact us for more information about these special sites'}
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Dive Sites Section */}
-      <section className="py-16 lg:py-24 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -184,9 +220,9 @@ export default function BancoChinchorro() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Image */}
-                  <div className="relative h-80 lg:h-auto lg:min-h-[400px]">
+                  <div className="relative h-80 lg:h-auto lg:min-h-[450px] bg-gray-100 flex items-center justify-center">
                     <div
-                      className="absolute inset-0 bg-cover bg-center"
+                      className="absolute inset-0 bg-contain bg-center bg-no-repeat"
                       style={{ backgroundImage: `url(${site.image})` }}
                     />
                   </div>
@@ -241,100 +277,108 @@ export default function BancoChinchorro() {
             {t('chinchorro.trip.title')}
           </motion.h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* What's Included */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* What's Included & NOT Included */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-xl shadow-light"
+              className="bg-white p-6 rounded-xl shadow-light space-y-6"
               style={{ wordBreak: 'break-word' }}
             >
-              <h3 className="text-xl font-bold text-ocean-deep mb-4">
-                {t('chinchorro.trip.included.title')}
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">✓</span>
-                  <span>{t('chinchorro.trip.included.equipment')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">✓</span>
-                  <span>{t('chinchorro.trip.included.lunch')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">✓</span>
-                  <span>{t('chinchorro.trip.included.guide')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">✓</span>
-                  <span>{t('chinchorro.trip.included.boat')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">✓</span>
-                  <span>{t('chinchorro.trip.included.park')}</span>
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-bold text-ocean-deep mb-4">
+                  {t('chinchorro.trip.included.title')}
+                </h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">✓</span>
+                    <span>{t('chinchorro.trip.included.equipment')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">✓</span>
+                    <span>{t('chinchorro.trip.included.tanks')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">✓</span>
+                    <span>{t('chinchorro.trip.included.lunch')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">✓</span>
+                    <span>{t('chinchorro.trip.included.guide')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">✓</span>
+                    <span>{t('chinchorro.trip.included.boat')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="pt-4 border-t border-gray-200">
+                <h3 className="text-xl font-bold text-ocean-deep mb-4">
+                  {t('chinchorro.trip.notincluded.title')}
+                </h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500">✗</span>
+                    <span>{t('chinchorro.trip.notincluded.park')}</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
-            {/* What to Bring */}
+            {/* What to Bring & Requirements */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-white p-6 rounded-xl shadow-light"
+              className="bg-white p-6 rounded-xl shadow-light space-y-6"
               style={{ wordBreak: 'break-word' }}
             >
-              <h3 className="text-xl font-bold text-ocean-deep mb-4">
-                {t('chinchorro.trip.bring.title')}
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">•</span>
-                  <span>{t('chinchorro.trip.bring.swimwear')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">•</span>
-                  <span>{t('chinchorro.trip.bring.sunscreen')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">•</span>
-                  <span>{t('chinchorro.trip.bring.certification')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">•</span>
-                  <span>{t('chinchorro.trip.bring.logbook')}</span>
-                </li>
-              </ul>
-            </motion.div>
+              <div>
+                <h3 className="text-xl font-bold text-ocean-deep mb-4">
+                  {t('chinchorro.trip.bring.title')}
+                </h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">•</span>
+                    <span>{t('chinchorro.trip.bring.swimwear')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">•</span>
+                    <span>{t('chinchorro.trip.bring.sunscreen')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">•</span>
+                    <span>{t('chinchorro.trip.bring.certification')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">•</span>
+                    <span>{t('chinchorro.trip.bring.logbook')}</span>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Requirements */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-white p-6 rounded-xl shadow-light"
-              style={{ wordBreak: 'break-word' }}
-            >
-              <h3 className="text-xl font-bold text-ocean-deep mb-4">
-                {t('chinchorro.trip.requirements.title')}
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">!</span>
-                  <span>{t('chinchorro.trip.requirements.certification')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">!</span>
-                  <span>{t('chinchorro.trip.requirements.dives')}</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-ocean-blue">!</span>
-                  <span>{t('chinchorro.trip.requirements.health')}</span>
-                </li>
-              </ul>
+              <div className="pt-4 border-t border-gray-200">
+                <h3 className="text-xl font-bold text-ocean-deep mb-4">
+                  {t('chinchorro.trip.requirements.title')}
+                </h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">!</span>
+                    <span>{t('chinchorro.trip.requirements.certification')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">!</span>
+                    <span>{t('chinchorro.trip.requirements.dives')}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-ocean-blue">!</span>
+                    <span>{t('chinchorro.trip.requirements.health')}</span>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
           </div>
 

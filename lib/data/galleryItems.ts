@@ -1,0 +1,548 @@
+import { Language } from '../translations'
+
+export interface GalleryItem {
+  type: 'photo'
+  src: string
+  alt: string
+  location: string
+}
+
+export function getGalleryItems(language: Language): GalleryItem[] {
+  if (language === 'es') {
+    return [
+      {
+        type: 'photo',
+        src: '/gallery/seaturtle.jpg',
+        alt: 'Tortuga marina nadando con gracia',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/turtle.jpg',
+        alt: 'Tortuga marina de cerca',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/turtleinreef.jpg',
+        alt: 'Tortuga marina en arrecife de coral',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/shark.jpg',
+        alt: 'Encuentro con tiburón',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/sharkback.jpg',
+        alt: 'Tiburón desde arriba',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/sharkside.jpg',
+        alt: 'Tiburón vista lateral',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/sharkinreef.jpg',
+        alt: 'Tiburón nadando en arrecife de coral',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/sharkdiver.jpg',
+        alt: 'Buzo con tiburón',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diverwithshark.jpg',
+        alt: 'Buzo encontrando tiburón',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/littlesharks.jpg',
+        alt: 'Tiburones pequeños nadando',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/stingrayback.jpg',
+        alt: 'Raya desde arriba',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/tigerstingray.jpg',
+        alt: 'Raya tigre',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/stingraywithshark.jpg',
+        alt: 'Raya y tiburón juntos',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/coral.jpg',
+        alt: 'Hermosas formaciones de coral',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/reef.jpg',
+        alt: 'Arrecife de coral vibrante',
+        location: 'Arrecife Mesoamericano',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/orangereef.jpg',
+        alt: 'Arrecife de coral naranja',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/coralswithfish.jpg',
+        alt: 'Corales con peces tropicales',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diverincorals.jpg',
+        alt: 'Buzo explorando formaciones de coral',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/fishes.jpg',
+        alt: 'Peces tropicales nadando',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/fishswarm.jpg',
+        alt: 'Gran cardumen de peces',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/fishswarm%20%282%29.jpg',
+        alt: 'Formación de cardumen de peces',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diverinswarm.jpg',
+        alt: 'Buzo rodeado de peces',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/fishclose.jpg',
+        alt: 'Detalle de pez de cerca',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/minifish.jpg',
+        alt: 'Peces tropicales pequeños',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/merofish.jpg',
+        alt: 'Pez mero',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diverwithfish.jpg',
+        alt: 'Buzo con peces tropicales',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/divers.jpg',
+        alt: 'Grupo de buzos explorando',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/divercamaramen.jpg',
+        alt: 'Buzo con cámara',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/boatwreck.jpg',
+        alt: 'Naufragio histórico',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/moraine.jpg',
+        alt: 'Morena',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/Big%20Brain.jpg',
+        alt: 'Formación de coral cerebro',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/DSC05712.jpg',
+        alt: 'Escena submarina',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/shop.jpg',
+        alt: 'Tienda de buceo',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/corals%20diver%20with%20diver.jpg',
+        alt: 'Buzos explorando formaciones de coral',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diver%20below%20shark.jpg',
+        alt: 'Buzo nadando debajo de tiburón',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/diver%20Below%20turtle.jpg',
+        alt: 'Buzo debajo de tortuga marina',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/fish%20in%20corals.jpg',
+        alt: 'Peces nadando en arrecife de coral',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/lion%20fish.jpg',
+        alt: 'Pez león',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/open%20corals.jpg',
+        alt: 'Formaciones de coral abierto',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/red%20corall.jpg',
+        alt: 'Arrecife de coral rojo',
+        location: 'Mar Caribe',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/shark%20swimming.jpg',
+        alt: 'Tiburón nadando en arrecife',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/tigerray%20sideview.jpg',
+        alt: 'Raya tigre vista lateral',
+        location: 'Mahahual',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/two%20sharks.jpg',
+        alt: 'Dos tiburones nadando juntos',
+        location: 'Banco Chinchorro',
+      },
+      {
+        type: 'photo',
+        src: '/gallery/yellow%20corals.jpg',
+        alt: 'Formaciones de coral amarillo',
+        location: 'Mar Caribe',
+      },
+    ]
+  }
+
+  // English
+  return [
+    {
+      type: 'photo',
+      src: '/gallery/seaturtle.jpg',
+      alt: 'Sea turtle swimming gracefully',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/turtle.jpg',
+      alt: 'Sea turtle closeup',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/turtleinreef.jpg',
+      alt: 'Sea turtle in coral reef',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/shark.jpg',
+      alt: 'Shark encounter',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/sharkback.jpg',
+      alt: 'Shark from above',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/sharkside.jpg',
+      alt: 'Shark side view',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/sharkinreef.jpg',
+      alt: 'Shark swimming in coral reef',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/sharkdiver.jpg',
+      alt: 'Diver with shark',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diverwithshark.jpg',
+      alt: 'Diver encountering shark',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/littlesharks.jpg',
+      alt: 'Small sharks swimming',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/stingrayback.jpg',
+      alt: 'Stingray from above',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/tigerstingray.jpg',
+      alt: 'Tiger stingray',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/stingraywithshark.jpg',
+      alt: 'Stingray and shark together',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/coral.jpg',
+      alt: 'Beautiful coral formations',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/reef.jpg',
+      alt: 'Vibrant coral reef',
+      location: 'Mesoamerican Reef',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/orangereef.jpg',
+      alt: 'Orange coral reef',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/coralswithfish.jpg',
+      alt: 'Corals with tropical fish',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diverincorals.jpg',
+      alt: 'Diver exploring coral formations',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/fishes.jpg',
+      alt: 'Tropical fish swimming',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/fishswarm.jpg',
+      alt: 'Large school of fish',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/fishswarm%20%282%29.jpg',
+      alt: 'Fish school formation',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diverinswarm.jpg',
+      alt: 'Diver surrounded by fish',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/fishclose.jpg',
+      alt: 'Fish closeup detail',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/minifish.jpg',
+      alt: 'Small tropical fish',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/merofish.jpg',
+      alt: 'Grouper fish',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diverwithfish.jpg',
+      alt: 'Diver with tropical fish',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/divers.jpg',
+      alt: 'Group of divers exploring',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/divercamaramen.jpg',
+      alt: 'Diver with camera',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/boatwreck.jpg',
+      alt: 'Historic boat wreck',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/moraine.jpg',
+      alt: 'Moray eel',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/Big%20Brain.jpg',
+      alt: 'Brain coral formation',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/DSC05712.jpg',
+      alt: 'Underwater scene',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/shop.jpg',
+      alt: 'Dive shop',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/corals%20diver%20with%20diver.jpg',
+      alt: 'Divers exploring coral formations',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diver%20below%20shark.jpg',
+      alt: 'Diver swimming below shark',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diver%20Below%20turtle.jpg',
+      alt: 'Diver below sea turtle',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/fish%20in%20corals.jpg',
+      alt: 'Fish swimming in coral reef',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/lion%20fish.jpg',
+      alt: 'Lionfish',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/open%20corals.jpg',
+      alt: 'Open coral formations',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/red%20corall.jpg',
+      alt: 'Red coral reef',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/shark%20swimming.jpg',
+      alt: 'Shark swimming in reef',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/tigerray%20sideview.jpg',
+      alt: 'Tiger ray side view',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/two%20sharks.jpg',
+      alt: 'Two sharks swimming together',
+      location: 'Banco Chinchorro',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/yellow%20corals.jpg',
+      alt: 'Yellow coral formations',
+      location: 'Caribbean Sea',
+    },
+  ]
+}
+

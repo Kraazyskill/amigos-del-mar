@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ChevronDown, Award, Wrench, Users, MapPin, TrendingUp, Shield } from 'lucide-react'
+import { Award, Wrench, Users, MapPin, TrendingUp, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -111,18 +111,6 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
-
-        {/* Scroll Indicator - Aligned with Logo */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-12 flex flex-col items-center justify-center gap-2 z-20 text-center"
-          style={{ left: '50%', transform: 'translateX(-50%)' }}
-        >
-          <span className="text-sm text-white/90">{t('home.hero.scrollDown')}</span>
-          <ChevronDown size={24} className="text-white/90" />
-        </motion.div>
       </section>
 
       {/* Welcome Section */}
@@ -219,7 +207,7 @@ export default function HomePage() {
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/90 via-ocean-deep/50 to-transparent z-10" />
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-[url('/destinations/banco-chinchorro-card.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                 
                 <div className="relative z-20 p-8 h-full flex flex-col justify-end text-white">
                   <h3 className="text-3xl font-bold mb-3">{t('home.destinations.chinchorro.title')}</h3>
@@ -228,7 +216,7 @@ export default function HomePage() {
                   </p>
                   <Link
                     href="/banco-chinchorro"
-                    className="inline-block px-6 py-3 bg-ocean-blue hover:bg-ocean-turquoise transition-colors rounded-lg font-semibold self-start"
+                    className="inline-block px-8 py-4 bg-white text-ocean-blue hover:bg-ocean-turquoise hover:text-white transition-all duration-300 rounded-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 self-start"
                   >
                     {t('home.destinations.chinchorro.cta')}
                   </Link>
@@ -246,7 +234,7 @@ export default function HomePage() {
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/90 via-ocean-deep/50 to-transparent z-10" />
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&q=80')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-[url('/destinations/mahahual-card.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                 
                 <div className="relative z-20 p-8 h-full flex flex-col justify-end text-white">
                   <h3 className="text-3xl font-bold mb-3">{t('home.destinations.mahahual.title')}</h3>
@@ -255,7 +243,7 @@ export default function HomePage() {
                   </p>
                   <Link
                     href="/mahahual"
-                    className="inline-block px-6 py-3 bg-ocean-blue hover:bg-ocean-turquoise transition-colors rounded-lg font-semibold self-start"
+                    className="inline-block px-8 py-4 bg-white text-ocean-blue hover:bg-ocean-turquoise hover:text-white transition-all duration-300 rounded-lg font-bold shadow-xl hover:shadow-2xl hover:-translate-y-1 self-start"
                   >
                     {t('home.destinations.mahahual.cta')}
                   </Link>
