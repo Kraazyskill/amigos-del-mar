@@ -23,13 +23,13 @@ export function getMahahualDiveSites(language: Language): DiveSite[] {
         image: '/dive-sites/mahahual/40-canones.jpg',
       },
       {
-        name: 'Acuari',
+        name: 'Acuario',
         depth: '8-13m',
         level: 'Principiante',
         description: 'Debido a la poca profundidad y las condiciones fáciles, este sitio de buceo es perfecto para estudiantes y principiantes y el descenso se puede hacer mediante una línea. La pared comienza a unos ocho metros y la arena debajo baja a unos 13 metros. Después de un tiempo, la pared se divide en hermosas secciones de coral. Durante la inmersión, es posible ver rayas águila deslizándose, tortugas buscando una esponja sabrosa para comer, morenas asomando de sus pequeñas casas-cueva y rayas confundiéndose con la arena. En ciertas épocas del año hay cardúmenes de cromis azules, lábridos y barracudas juveniles de cola amarilla. Este sitio es excelente para exploradores que les gusta encontrar las pequeñas cosas, como camarones, langostas escondidas, anguilas bebé y peces juveniles. Perfecto para el curso de discover scuba o open water.',
         marine: 'Rayas águila, tortugas, morenas, rayas, cromis azules, lábridos, barracudas juveniles, camarones, langostas',
         season: 'Mejor: Todo el año',
-        image: '/gallery/reef.jpg',
+        image: '/dive-sites/mahahual/Acuario.jpg',
       },
       {
         name: 'Chinchorrito',
@@ -109,13 +109,13 @@ export function getMahahualDiveSites(language: Language): DiveSite[] {
       image: '/dive-sites/mahahual/40-canones.jpg',
     },
     {
-      name: 'Acuari',
+      name: 'Acuario',
       depth: '8-13m',
       level: 'Beginner',
       description: 'Due to the shallow depth and easy conditions, this dive site is perfect for students and beginners and the descent can be done via a line. The wall starts at about eight metres and the sand below drops down to about 13 metres. After a while the wall splits into beautiful sections of coral. During the dive, it\'s possible to spot eagle rays gliding past, turtles looking for some tasty sponge to eat, moray eels poking out of their little cave homes and sting rays blending into the sand. At certain times of year there are schools of blue chromis, wrasse and juvenile yellowtail barracuda. This site is great for explorers who like finding the little things, such as shrimps, hiding lobsters, baby eels and juvenile fish. Perfect for discover scuba or open water courses.',
       marine: 'Eagle rays, turtles, moray eels, sting rays, blue chromis, wrasse, juvenile yellowtail barracuda, shrimps, lobsters',
       season: 'Best: All year',
-      image: '/gallery/reef.jpg',
+      image: '/dive-sites/mahahual/Acuario.jpg',
     },
     {
       name: 'Chinchorrito',

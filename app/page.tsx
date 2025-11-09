@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Award, Wrench, Users, MapPin, TrendingUp, Shield } from 'lucide-react'
+import { Award, Wrench, Users, MapPin, TrendingUp, Shield, Waves } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 
@@ -11,8 +11,8 @@ export default function HomePage() {
   const features = [
     {
       icon: Award,
-      title: t('home.features.padi.title'),
-      description: t('home.features.padi.description'),
+      title: t('home.features.sdi.title'),
+      description: t('home.features.sdi.description'),
     },
     {
       icon: Wrench,
@@ -21,13 +21,8 @@ export default function HomePage() {
     },
     {
       icon: Users,
-      title: t('home.features.groups.title'),
-      description: t('home.features.groups.description'),
-    },
-    {
-      icon: MapPin,
-      title: t('home.features.sites.title'),
-      description: t('home.features.sites.description'),
+      title: t('home.features.boutique.title'),
+      description: t('home.features.boutique.description'),
     },
     {
       icon: TrendingUp,
@@ -38,6 +33,11 @@ export default function HomePage() {
       icon: Shield,
       title: t('home.features.safety.title'),
       description: t('home.features.safety.description'),
+    },
+    {
+      icon: Waves,
+      title: t('home.features.bestsites.title'),
+      description: t('home.features.bestsites.description'),
     },
   ]
 
@@ -207,7 +207,7 @@ export default function HomePage() {
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/90 via-ocean-deep/50 to-transparent z-10" />
-                <div className="absolute inset-0 bg-[url('/destinations/banco-chinchorro-card.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-[url('/destinations/banco-chinchorro-card.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                 
                 <div className="relative z-20 p-8 h-full flex flex-col justify-end text-white">
                   <h3 className="text-3xl font-bold mb-3">{t('home.destinations.chinchorro.title')}</h3>

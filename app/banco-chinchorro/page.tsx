@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ChevronRight, Anchor, Fish, Eye, Award } from 'lucide-react'
+import { ChevronRight, Anchor, Fish, Eye, Award, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { getBancoChinchorroDiveSites } from '@/lib/data/diveSitesBancoChinchorro'
@@ -30,6 +30,16 @@ export default function BancoChinchorro() {
       icon: Eye,
       title: t('chinchorro.features.visibility.title'),
       description: t('chinchorro.features.visibility.description'),
+    },
+    {
+      icon: MapPin,
+      title: t('chinchorro.features.unique.title'),
+      description: t('chinchorro.features.unique.description'),
+    },
+    {
+      icon: Award,
+      title: t('chinchorro.features.exclusive.title'),
+      description: t('chinchorro.features.exclusive.description'),
     },
   ]
 
@@ -129,7 +139,7 @@ export default function BancoChinchorro() {
             {t('chinchorro.features.title')}
           </motion.h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -151,6 +161,41 @@ export default function BancoChinchorro() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Chinchorro Map Section */}
+      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto"
+          >
+            <h2 className="text-3xl lg:text-4xl font-bold text-ocean-deep text-center mb-8">
+              {language === 'es' ? 'Mapa de Banco Chinchorro' : 'Banco Chinchorro Map'}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-8">
+              {language === 'es' 
+                ? 'Explora el atolón de coral más grande del hemisferio norte' 
+                : 'Explore the largest coral atoll in the Northern Hemisphere'}
+            </p>
+            
+            {/* Map Image */}
+            <div className="rounded-xl overflow-hidden shadow-heavy">
+              <img 
+                src="/dive-sites/banco-chinchorro/banco-chinchorro-map.jpg" 
+                alt={language === 'es' ? 'Mapa de Banco Chinchorro' : 'Banco Chinchorro map'}
+                className="w-full h-auto"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  display: 'block'
+                }}
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 

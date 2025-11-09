@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Image protection */
+img, video {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-touch-callout: none;
+  pointer-events: auto;
+}
+
+/* Prevent image dragging */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 :root {
   --ocean-blue: #084e90;
   --deep-ocean: #002766;

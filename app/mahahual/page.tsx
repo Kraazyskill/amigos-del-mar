@@ -305,6 +305,9 @@ export default function MahahualPage() {
                   </div>
                 </div>
               </div>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-sm text-gray-600 italic">{t('mahahual.schedule.note')}</p>
+              </div>
             </motion.div>
 
             {/* Pricing */}
@@ -331,8 +334,12 @@ export default function MahahualPage() {
                   <p className="font-semibold text-ocean-deep">{t('mahahual.pricing.multiday')}</p>
                   <p className="text-gray-600 text-sm">{t('mahahual.pricing.contact')}</p>
                 </div>
+                <div className="border-b border-gray-200 pb-3">
+                  <p className="font-semibold text-ocean-deep">{t('mahahual.pricing.discovery')}</p>
+                  <p className="text-gray-600 text-sm">{t('mahahual.pricing.contact')}</p>
+                </div>
                 <div>
-                  <p className="font-semibold text-ocean-deep">{t('mahahual.pricing.equipment')}</p>
+                  <p className="font-semibold text-ocean-deep">{t('mahahual.pricing.courses')}</p>
                   <p className="text-gray-600 text-sm">{t('mahahual.pricing.contact')}</p>
                 </div>
               </div>

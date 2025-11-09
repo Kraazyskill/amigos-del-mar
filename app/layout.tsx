@@ -5,6 +5,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/ui/WhatsAppButton'
+import Script from 'next/script'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -33,7 +34,8 @@ export const metadata: Metadata = {
   viewport: {
     width: 'device-width',
     initialScale: 1,
-    maximumScale: 5,
+    maximumScale: 1,
+    userScalable: false,
   },
   robots: {
     index: true,
@@ -64,6 +66,40 @@ export default function RootLayout({
           <Footer />
           <WhatsAppButton />
         </LanguageProvider>
+        
+        {/* Image and content protection */}
+        <Script id="content-protection" strategy="afterInteractive">
+          {`
+            // Disable right-click on images and videos
+            document.addEventListener('contextmenu', function(e) {
+              if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO' || e.target.style.backgroundImage) {
+                e.preventDefault();
+                return false;
+              }
+            }, false);
+            
+            // Disable drag on images
+            document.addEventListener('dragstart', function(e) {
+              if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+                return false;
+              }
+            }, false);
+            
+            // Disable Ctrl+S / Cmd+S (save page)
+            document.addEventListener('keydown', function(e) {
+              if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                return false;
+              }
+            }, false);
+            
+            // Disable text selection on images (CSS)
+            const style = document.createElement('style');
+            style.innerHTML = 'img, video { user-select: none; -webkit-user-select: none; -moz-user-select: none; pointer-events: auto; }';
+            document.head.appendChild(style);
+          `}
+        </Script>
       </body>
     </html>
   )
