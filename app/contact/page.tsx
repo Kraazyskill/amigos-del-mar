@@ -4,7 +4,7 @@ import { useState, FormEvent } from 'react'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Send, Check, AlertCircle } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { formatEmail, formatPhone } from '@/lib/utils'
+import { formatEmail } from '@/lib/utils'
 
 interface FormData {
   name: string

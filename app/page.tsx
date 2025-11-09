@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Award, Wrench, Users, MapPin, TrendingUp, Shield, Waves } from 'lucide-react'
+import { Award, Wrench, Users, TrendingUp, Shield, Waves } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/contexts/LanguageContext'
 

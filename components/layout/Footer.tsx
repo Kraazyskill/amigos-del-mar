@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Waves, MapPin, Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { formatEmail, formatPhone } from '@/lib/utils'
+import { formatEmail } from '@/lib/utils'
 
 export default function Footer() {
   const { t } = useLanguage()
