@@ -159,36 +159,86 @@ export default function BancoChinchorro() {
         </div>
       </section>
 
-      {/* Chinchorro Map Section */}
+      {/* Chinchorro Map & Video Section */}
       <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
+            className="max-w-6xl mx-auto"
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-ocean-deep text-center mb-8">
-              {language === 'es' ? 'Mapa de Banco Chinchorro' : 'Banco Chinchorro Map'}
+              {language === 'es' ? 'Explora Banco Chinchorro' : 'Explore Banco Chinchorro'}
             </h2>
             <p className="text-lg text-gray-600 text-center mb-8">
               {language === 'es' 
-                ? 'Explora el atolón de coral más grande del hemisferio norte' 
-                : 'Explore the largest coral atoll in the Northern Hemisphere'}
+                ? 'Mapa del atolón y video de inmersión' 
+                : 'Atoll map and diving video'}
             </p>
             
-            {/* Map Image */}
-            <div className="rounded-xl overflow-hidden shadow-heavy">
-              <img 
-                src="/dive-sites/banco-chinchorro/banco-chinchorro-map.jpg" 
-                alt={language === 'es' ? 'Mapa de Banco Chinchorro' : 'Banco Chinchorro map'}
-                className="w-full h-auto"
-                style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  display: 'block'
-                }}
-              />
+            {/* Map and Videos Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Map Image - Left Side (Full Height) */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="rounded-xl overflow-hidden shadow-heavy"
+              >
+                <img 
+                  src="/dive-sites/banco-chinchorro/banco-chinchorro-map.jpg" 
+                  alt={language === 'es' ? 'Mapa de Banco Chinchorro' : 'Banco Chinchorro map'}
+                  className="w-full h-auto"
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                    display: 'block'
+                  }}
+                />
+              </motion.div>
+
+              {/* Two Videos Stacked - Right Side */}
+              <div className="flex flex-col gap-8">
+                {/* First YouTube Video */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className="rounded-xl overflow-hidden shadow-heavy"
+                >
+                  <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src="https://www.youtube.com/embed/PqKYOdxplEU"
+                      title={language === 'es' ? 'Video de Buceo en Banco Chinchorro' : 'Banco Chinchorro Diving Video'}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                </motion.div>
+
+                {/* Second YouTube Video */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="rounded-xl overflow-hidden shadow-heavy"
+                >
+                  <div className="relative" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src="https://www.youtube.com/embed/H-kJ-QujUQg"
+                      title={language === 'es' ? 'Experiencia de Buceo en Banco Chinchorro' : 'Banco Chinchorro Diving Experience'}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -33,7 +33,7 @@ export const es = {
   'common.backToTop': 'Volver Arriba',
   
   // Página de Inicio - Hero
-  'home.hero.title': 'Explora las Profundidades Ocultas del Caribe',
+  'home.hero.title': 'Explora las Joyas Ocultas del Caribe',
   'home.hero.subtitle': 'Experiencias de buceo profesional en aguas prístinas',
   'home.hero.cta.primary': 'Reserva Tu Aventura',
   'home.hero.cta.secondary': 'Saber Más',

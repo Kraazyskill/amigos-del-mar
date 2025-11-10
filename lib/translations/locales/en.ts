@@ -33,7 +33,7 @@ export const en = {
   'common.backToTop': 'Back to Top',
   
   // Home Page - Hero
-  'home.hero.title': 'Explore the Caribbean\'s Hidden Depths',
+  'home.hero.title': 'Explore the Caribbean\'s Hidden Gems',
   'home.hero.subtitle': 'Professional diving experiences in pristine waters',
   'home.hero.cta.primary': 'Book Your Adventure',
   'home.hero.cta.secondary': 'Learn More',
