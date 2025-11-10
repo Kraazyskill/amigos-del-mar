@@ -81,8 +81,6 @@ export const es = {
   
   'chinchorro.intro.title': 'Buceo en Banco Chinchorro',
   'chinchorro.intro.text1': 'A unos 35 km de la costa de Mahahual se encuentra un atolón de coral misterioso y maravilloso, nombre completo Reserva de la Biósfera Banco Chinchorro. Este parque nacional, rico en historia, es también un cementerio de todo tipo de barcos hundidos. Un área natural protegida desde 1996, conserva su belleza natural, guardando el secreto de una colección de naufragios dispersos a lo largo del arrecife exterior.',
-  'chinchorro.intro.text2': 'Forma parte del "Triángulo", un nombre que data desde el siglo XVI, también designado por Charles Darwin como parte del Arrecife Triangular. Midiendo hasta 800 km² con apenas un 1% de tierra sobre el agua, puedes estar seguro de que la magia de este lugar está bajo el agua.',
-  'chinchorro.intro.text3': 'En Banco Chinchorro definitivamente tienes más de una opción para elegir tu inmersión, dependiendo también de las condiciones climáticas y del mar y tu propia comodidad en el agua: Hemos mapeado 32 sitios de buceo en arrecife desde profundidades de 10 a 35m y también somos una tienda de buceo certificada por el Instituto Nacional de Antropología e Historia con acceso al Museo Submarino de Banco Chinchorro y sus docenas de naufragios.',
   
   'chinchorro.features.title': 'Qué hace tan especial a Banco Chinchorro con nosotros',
   'chinchorro.features.unesco.title': 'Reserva de la Biosfera UNESCO',
@@ -168,7 +166,6 @@ export const es = {
   'mahahual.intro.title': 'Buceo en Mahahual',
   'mahahual.intro.text1': 'Los arrecifes alrededor de Mahahual ofrecen un buceo caribeño soberbio, y debido a estar un poco fuera del camino trillado, los buzos disfrutarán de una calidad prístina de arrecife así como generalmente tener cada sitio de buceo para ellos solos. No solo los arrecifes están saludables sino que la topografía varía dramáticamente desde paredes hasta cañones y jardines de coral, una diversidad que no se ve en ningún otro lugar del Caribe Mexicano.',
   'mahahual.intro.text2': 'Hay una rica variedad de vida marina en Mahahual, incluyendo rayas águila, langostas, meros, barracudas, pargos y las tres tortugas caribeñas diferentes, por nombrar solo algunas especies. En mayo es temporada de apareamiento para tortugas caguama y los machos gigantes se acercan a la costa. Algunos son del tamaño de un auto pequeño y siempre son un encuentro increíble y memorable. Ocasionalmente delfines y tiburones también visitan el área.',
-  'mahahual.intro.text3': 'Los buzos tienen muchas opciones ya que hay cientos de sitios de buceo dispersos a lo largo de 60 kilómetros de costa hacia el norte hasta la Reserva de la Biosfera Sian Ka\'an y otros 40 kilómetros al sur hasta el Parque Marino Xcalak. También hay más de 15 sitios a poca distancia del pueblo para aquellos buzos que prefieren trayectos cortos en bote. La variedad de sitios de buceo disponibles hace de este pequeño pueblo pesquero un destino muy especial para buzos.',
   
   'mahahual.features.title': 'Por Qué Bucear en Mahahual',
   'mahahual.features.reef.title': 'Segundo Arrecife Más Grande del Mundo',
@@ -237,7 +234,7 @@ export const es = {
   
   // Página Galería
   'gallery.hero.title': 'Galería',
-  'gallery.hero.subtitle': 'Experimenta la belleza del buceo caribeño a través de nuestro lente',
+  'gallery.hero.subtitle': 'Experimenta la belleza del arrecife Mesoamericano en Mahahual y Banco Chinchorro',
   'gallery.filters.all': 'Todo',
   'gallery.filters.photos': 'Fotos',
   'gallery.filters.videos': 'Videos',

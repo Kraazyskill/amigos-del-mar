@@ -16,6 +16,10 @@ export default function Header() {
   const { t, language, setLanguage } = useLanguage()
 
   useEffect(() => {
+    console.log('🍔 Menu state changed to:', isMenuOpen);
+  }, [isMenuOpen])
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
@@ -25,7 +29,11 @@ export default function Header() {
 
   useEffect(() => {
     // Close menu when route changes
+    console.log('🔄 Pathname changed, closing menu. New pathname:', pathname);
     setIsMenuOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
     // Prevent body scroll when menu is open
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden'
@@ -35,7 +43,7 @@ export default function Header() {
     return () => {
       document.body.style.overflow = ''
     }
-  }, [pathname, isMenuOpen])
+  }, [isMenuOpen])
 
   const navLinks = [
     { href: '/', label: t('nav.home') },
@@ -50,33 +58,35 @@ export default function Header() {
   }
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        isScrolled
-          ? 'bg-ocean-blue/95 backdrop-blur-md shadow-md'
-          : 'bg-ocean-blue/90 backdrop-blur-sm'
-      )}
-      style={{
-        maxWidth: '100vw',
-        overflowX: 'hidden',
-      }}
-    >
+    <>
+      <header
+        className={cn(
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          isScrolled
+            ? 'bg-ocean-blue/95 backdrop-blur-md shadow-md'
+            : 'bg-ocean-blue/90 backdrop-blur-sm'
+        )}
+        style={{
+          maxWidth: '100vw',
+          overflowX: 'hidden',
+        }}
+      >
       <nav className="container-safe mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24 lg:h-32">
           {/* Logo - Left Side */}
           <Link
             href="/"
-            className="flex items-center gap-2 hover:opacity-90 transition-opacity z-10"
+            className="flex items-center gap-2 hover:opacity-90 transition-opacity relative z-10"
             style={{ flexShrink: 0 }}
           >
             <Image 
               src="/logo.png" 
               alt="Amigos del Mar" 
-              width={240} 
-              height={95}
+              width={180} 
+              height={71}
               priority
-              style={{ flexShrink: 0, maxHeight: '110px', width: 'auto', height: 'auto' }}
+              className="lg:w-[240px] lg:h-[95px]"
+              style={{ flexShrink: 0, maxHeight: '80px', width: 'auto', height: 'auto', maxWidth: '180px' }}
             />
           </Link>
 
@@ -112,13 +122,13 @@ export default function Header() {
           </div>
 
           {/* Mobile: Menu Button & Language Toggle */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-2 relative z-20">
             {/* Language Toggle - Mobile */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-white"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors text-white relative z-20"
               aria-label={`${t('lang.switchTo')} ${language === 'en' ? t('lang.spanish') : t('lang.english')}`}
-              style={{ flexShrink: 0 }}
+              style={{ flexShrink: 0, pointerEvents: 'auto' }}
             >
               <Globe size={20} style={{ flexShrink: 0 }} />
               <span className="font-medium text-sm uppercase">{language}</span>
@@ -126,10 +136,18 @@ export default function Header() {
             
             {/* Mobile Menu Button */}
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg hover:bg-white/10 transition-colors text-white"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('🔘 Menu clicked! Current:', isMenuOpen, 'New:', !isMenuOpen);
+                setIsMenuOpen(prev => {
+                  console.log('📝 Setting menu from', prev, 'to', !prev);
+                  return !prev;
+                });
+              }}
+              className="p-2 rounded-lg hover:bg-white/10 transition-colors text-white relative z-20"
               aria-label={isMenuOpen ? t('nav.close') : t('nav.menu')}
-              style={{ flexShrink: 0 }}
+              style={{ flexShrink: 0, pointerEvents: 'auto', cursor: 'pointer' }}
             >
               {isMenuOpen ? (
                 <X size={24} />
@@ -140,43 +158,45 @@ export default function Header() {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-ocean-deep border-t border-white/20"
-            style={{
-              maxWidth: '100vw',
-              overflowX: 'hidden',
-              overflowY: 'auto',
-            }}
-          >
-            <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    'px-4 py-3 rounded-lg font-medium transition-colors',
-                    pathname === link.href
-                      ? 'bg-white text-ocean-blue'
-                      : 'text-white hover:bg-white/10'
-                  )}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </header>
+
+    {/* Mobile Menu Dropdown - Full Screen Overlay */}
+    {isMenuOpen && (
+      <div
+        className="lg:hidden shadow-2xl"
+        style={{
+          position: 'fixed',
+          top: '96px',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 9999,
+          maxWidth: '100vw',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          backgroundColor: '#40a9ff',
+        }}
+      >
+        <div className="container mx-auto px-4 py-6 flex flex-col gap-3">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                'px-6 py-4 rounded-lg font-medium transition-colors text-lg',
+                pathname === link.href
+                  ? 'bg-white text-ocean-blue'
+                  : 'text-white hover:bg-white/20 border border-white/20'
+              )}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    )}
+    </>
   )
 }
 

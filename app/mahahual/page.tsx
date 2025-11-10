@@ -47,17 +47,18 @@ export default function MahahualPage() {
         className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center text-white overflow-hidden"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/80 to-ocean-deep/90 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
           {/* Video Background */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
               minWidth: '100%',
               minHeight: '100%',
+              opacity: 0.7,
             }}
           >
             <source src="/videos/mahahual-hero.mov" type="video/quicktime" />
@@ -109,9 +110,6 @@ export default function MahahualPage() {
             </motion.p>
             <motion.p variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed">
               {t('mahahual.intro.text2')}
-            </motion.p>
-            <motion.p variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed">
-              {t('mahahual.intro.text3')}
             </motion.p>
           </motion.div>
         </div>
@@ -219,10 +217,15 @@ export default function MahahualPage() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Image */}
-                  <div className="relative h-80 lg:h-auto lg:min-h-[450px] bg-gray-100 flex items-center justify-center">
-                    <div
-                      className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-                      style={{ backgroundImage: `url(${site.image})` }}
+                  <div className="relative h-80 lg:h-auto lg:min-h-[450px] bg-white flex items-center justify-center overflow-hidden">
+                    <img
+                      src={site.image}
+                      alt={site.name}
+                      className="w-full h-full object-contain"
+                      style={{
+                        maxWidth: '100%',
+                        maxHeight: '100%',
+                      }}
                     />
                   </div>
 

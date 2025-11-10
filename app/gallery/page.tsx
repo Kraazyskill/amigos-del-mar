@@ -29,20 +29,21 @@ export default function GalleryPage() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[300px] lg:min-h-[400px] flex items-center justify-center text-white overflow-hidden"
+        className="relative min-h-[300px] lg:min-h-[400px] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/80 to-ocean-deep/90 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
           {/* Video Background */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
               minWidth: '100%',
               minHeight: '100%',
+              opacity: 0.7,
             }}
           >
             <source src="/videos/gallery-hero.mov" type="video/quicktime" />

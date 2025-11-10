@@ -65,18 +65,19 @@ export default function HomePage() {
           overflowX: 'hidden',
         }}
       >
-        {/* Background Video with Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/70 to-ocean-deep/80 z-0">
+        {/* Background Video with Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
           {/* Video Background */}
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
               minWidth: '100%',
               minHeight: '100%',
+              opacity: 0.7,
             }}
           >
             <source src="/videos/hero-background.mov" type="video/quicktime" />
@@ -94,7 +95,7 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="space-y-6 lg:space-y-8"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-balance">
               {t('home.hero.title')}
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto text-balance">

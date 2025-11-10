@@ -81,8 +81,6 @@ export const en = {
   
   'chinchorro.intro.title': 'Diving at Banco Chinchorro',
   'chinchorro.intro.text1': 'About 35kms off the coast of Mahahual lies a mysterious yet wonderful coral atoll, full name Reserva de la Biósfera Banco Chinchorro. This national park, rich in history, is also a graveyard for all sorts of sunken ships. A natural protected area since 1996, it conserves its natural beauty, holding secret to a collection of wrecks scattered alongside the exterior reef.',
-  'chinchorro.intro.text2': 'It forms part of the "Tríangulo" a name dating back since the XVI century, also designated by Charles Darwin as part the Triangle Reef. Measuring up to 800sqm with just a mere 1% of land above water, you can be sure that the magic of this place is underwater.',
-  'chinchorro.intro.text3': 'At Banco Chinchorro you definitely have more than one option to choose your dive, depending also on weather and sea conditions and your own comfortability in the water: We have mapped 32 reef dive sites from depth of 10 to 35m and also are a certified dive shop from National Institute of Anthropology and History with access to the Banco Chinchorro Underwater Museum and its dozens of ship wrecks.',
   
   'chinchorro.features.title': 'What makes Banco Chinchorro so special with us',
   'chinchorro.features.unesco.title': 'UNESCO Biosphere Reserve',
@@ -168,7 +166,6 @@ export const en = {
   'mahahual.intro.title': 'Diving in Mahahual',
   'mahahual.intro.text1': 'The reefs around Mahahual offer superb Caribbean diving, and due to being a little off the beaten track, divers will enjoy a pristine quality of reef as well as usually having each dive site to themselves. Not only are the reefs healthy but the topography varies dramatically from walls to canyons to coral gardens, a diversity not seen anywhere else in the Mexican Caribbean.',
   'mahahual.intro.text2': 'There\'s a rich variety of marine life to be found in Mahahual, including eagle rays, lobsters, groupers, barracudas, snappers and all three different Caribbean turtles, to name just a few species. In May it\'s mating season for loggerhead turtles and so the giant males make their way close to shore. Some of them are the size of a small car, and always make for an incredible and memorable encounter. Occasionally dolphins and sharks also visit the area.',
-  'mahahual.intro.text3': 'Divers are spoilt for choice as there are hundreds of dive sites scattered along 60 kilometres of coast heading north to the Sian Ka\'an Biosphere Reserve and another 40 kilometres south to Xcalak Marine Park. There are also over 15 sites just a short distance from town for those divers who prefer short boat rides. The variety of dive sites available makes this small fishing village a very special destination for divers.',
   
   'mahahual.features.title': 'Why Dive Mahahual',
   'mahahual.features.reef.title': 'World\'s Second-Largest Reef',
@@ -237,7 +234,7 @@ export const en = {
   
   // Gallery Page
   'gallery.hero.title': 'Gallery',
-  'gallery.hero.subtitle': 'Experience the beauty of Caribbean diving through our lens',
+  'gallery.hero.subtitle': 'Experience the beauty of the Mesoamerican reef in Mahahual and Banco Chinchorro',
   'gallery.filters.all': 'All',
   'gallery.filters.photos': 'Photos',
   'gallery.filters.videos': 'Videos',
