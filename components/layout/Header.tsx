@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Globe } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 export default function Header() {
