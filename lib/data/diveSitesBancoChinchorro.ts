@@ -59,7 +59,7 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
         image: '/dive-sites/banco-chinchorro/gonzales.jpg',
       },
       {
-        name: 'Gran Mure',
+        name: 'Gran Muro',
         depth: '15-28m (pared a 60m)',
         level: 'Avanzado',
         description: 'Para aquellos que aman la emoción de una inmersión en pared increíble, Gran Mure no debe perderse. El arrecife superior comienza a solo 15 metros de profundidad y desciende hasta donde comienza la pared a 20 metros, cayendo a unos impresionantes 60 metros en algunas partes. En Gran Mure todo es un poco más grande que en cualquier otro lugar de Chinchorro. Nadarás junto a enormes esponjas de barril, algunas de las cuales tienen hasta tres metros de altura; así como hermosas esponjas tubulares amarillas gigantes, que crecen para tener miles de años. Otro punto culminante son los enormes cardúmenes de peces bonnetmouth y boga que son verdaderamente increíbles de ver - miles de peces pequeños moviéndose juntos frenéticamente en lo que se conoce como una bola de cebo. Esto puede atraer todo tipo de depredadores: meros, barracudas, jureles, trevally y jureles de ojo de caballo.',
@@ -181,7 +181,7 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
       image: '/dive-sites/banco-chinchorro/gonzales.jpg',
     },
     {
-      name: 'Gran Mure',
+      name: 'Gran Muro',
       depth: '15-28m (wall to 60m)',
       level: 'Advanced',
       description: 'For those who love the thrill of an amazing wall dive, Gran Mure is not to be missed. The upper reef starts at just 15 metres depth and slopes down to where the wall begins at 20 meters, dropping to a breath-taking 60 metres in some parts. At Gran Mure everything is a bit bigger than anywhere else in Chinchorro. You\'ll swim past enormous barrel sponges, some of which are up to three metres tall; as well as beautiful giant yellow tube sponges, which grow to be thousands of years old. Another highlight are the huge schools of bonnetmouth and boga fish which are truly incredible to see - thousands of small fish moving together frantically in what is known as a bait ball. This can attract all kinds of predators: groupers, barracuda, permit, trevally and horse-eye jacks.',

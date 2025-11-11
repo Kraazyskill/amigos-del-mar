@@ -237,9 +237,6 @@ export default function MahahualPage() {
                         <span className="px-3 py-1 bg-ocean-light text-ocean-blue rounded-full text-sm font-medium">
                           {site.depth}
                         </span>
-                        <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                          {site.level}
-                        </span>
                       </div>
                     </div>
 
@@ -254,9 +251,6 @@ export default function MahahualPage() {
                           <span className="font-semibold text-ocean-deep">{t('site.marine')}:</span>
                           <span className="text-gray-600 ml-2" style={{ wordBreak: 'break-word' }}>{site.marine}</span>
                         </div>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="font-semibold text-ocean-deep">{site.season}</span>
                       </div>
                     </div>
                   </div>

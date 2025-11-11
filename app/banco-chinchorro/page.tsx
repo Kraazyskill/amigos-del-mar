@@ -229,7 +229,7 @@ export default function BancoChinchorro() {
                 >
                   <div className="relative" style={{ paddingBottom: '56.25%' }}>
                     <iframe
-                      src="https://www.youtube.com/embed/H-kJ-QujUQg"
+                      src="https://www.youtube.com/embed/lH1eu7F4tmU"
                       title={language === 'es' ? 'Experiencia de Buceo en Banco Chinchorro' : 'Banco Chinchorro Diving Experience'}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -330,9 +330,6 @@ export default function BancoChinchorro() {
                         <span className="px-3 py-1 bg-ocean-light text-ocean-blue rounded-full text-sm font-medium">
                           {site.depth}
                         </span>
-                        <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
-                          {site.level}
-                        </span>
                       </div>
                     </div>
 
@@ -347,9 +344,6 @@ export default function BancoChinchorro() {
                           <span className="font-semibold text-ocean-deep">{t('site.marine')}:</span>
                           <span className="text-gray-600 ml-2" style={{ wordBreak: 'break-word' }}>{site.marine}</span>
                         </div>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="font-semibold text-ocean-deep">{site.season}</span>
                       </div>
                     </div>
                   </div>
