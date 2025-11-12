@@ -1,0 +1,27 @@
+📸 CONTACT PAGE BACKGROUND IMAGE
+================================
+
+Place your contact page background image here!
+
+File name needed:
+- contact-hero.jpg
+
+This appears on the CONTACT PAGE hero section (top of page).
+
+Recommended specs:
+- Format: JPG
+- Size: 1920px wide minimum
+- Aspect Ratio: 16:9 or wider
+- File size: Under 1MB
+- Quality: High, professional
+
+Content suggestions:
+- Your dive shop exterior or interior
+- Underwater scene from Mahahual
+- La Chula boat
+- Beach/ocean scene in Mahahual
+- Divers preparing equipment
+- Welcome/inviting scene
+
+See instructions in this file's parent folder!
+

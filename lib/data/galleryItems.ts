@@ -400,14 +400,26 @@ export function getGalleryItems(language: Language): GalleryItem[] {
         alt: 'Ballena vista lateral',
         location: 'Mar Caribe',
       },
-      {
-        type: 'photo',
-        src: '/gallery/whale.jpg',
-        alt: 'Ballena',
-        location: 'Mar Caribe',
-      },
-    ]
-  }
+    {
+      type: 'photo',
+      src: '/gallery/whale.jpg',
+      alt: 'Ballena',
+      location: 'Mar Caribe',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diver-reef.jpg',
+      alt: 'Buceador explorando el arrecife',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/Angel-fish.jpg',
+      alt: 'Pez ángel tropical',
+      location: 'Mar Caribe',
+    },
+  ]
+}
 
   // English
   return [
@@ -805,6 +817,18 @@ export function getGalleryItems(language: Language): GalleryItem[] {
       type: 'photo',
       src: '/gallery/whale.jpg',
       alt: 'Whale',
+      location: 'Caribbean Sea',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/diver-reef.jpg',
+      alt: 'Diver exploring the reef',
+      location: 'Mahahual',
+    },
+    {
+      type: 'photo',
+      src: '/gallery/Angel-fish.jpg',
+      alt: 'Tropical angelfish',
       location: 'Caribbean Sea',
     },
   ]

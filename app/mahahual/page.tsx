@@ -44,7 +44,7 @@ export default function MahahualPage() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center text-white overflow-hidden"
+        className="relative min-h-[500px] lg:min-h-[600px] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
@@ -83,9 +83,9 @@ export default function MahahualPage() {
               <span className="text-gray-300">{t('nav.mahahual')}</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              {t('mahahual.hero.title')}
-            </h1>
+             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white">
+               {t('mahahual.hero.title')}
+             </h1>
             <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">
               {t('mahahual.hero.subtitle')}
             </p>
@@ -153,7 +153,7 @@ export default function MahahualPage() {
       </section>
 
       {/* Dive Spots Overview Section */}
-      <section className="py-16 lg:py-24 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -162,7 +162,7 @@ export default function MahahualPage() {
             className="max-w-5xl mx-auto"
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-ocean-deep text-center mb-8">
-              {language === 'es' ? 'Mapa de Sitios de Buceo Populares' : 'Popular Dive Spots Map'}
+              {language === 'es' ? 'Sitios de Buceo Populares' : 'Popular Dive Sites'}
             </h2>
             <p className="text-lg text-gray-600 text-center mb-8">
               {language === 'es' 
@@ -188,22 +188,8 @@ export default function MahahualPage() {
       </section>
 
       {/* Dive Sites Section */}
-      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl lg:text-4xl font-bold text-ocean-deep mb-4">
-              {t('mahahual.sites.title')}
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              {t('mahahual.sites.subtitle')}
-            </p>
-          </motion.div>
-
           <div className="space-y-8">
             {diveSites.map((site, index) => (
               <motion.div
@@ -262,7 +248,7 @@ export default function MahahualPage() {
       </section>
 
       {/* Schedule & Pricing Section */}
-      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Schedule */}

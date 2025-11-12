@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 export default function WhatsAppButton() {
   const { t } = useLanguage()
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5299841516758' // Keep full international format for WhatsApp
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5298415167580' // +52 984 151 6758 in international format
   const message = t('whatsapp.message')
   const link = formatWhatsAppLink(whatsappNumber, message)
 

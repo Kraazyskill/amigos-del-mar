@@ -59,7 +59,7 @@ export default function HomePage() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[600px] lg:min-h-[90vh] flex items-center justify-center text-white overflow-hidden"
+        className="relative min-h-[650px] lg:min-h-[95vh] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
         style={{
           maxWidth: '100vw',
           overflowX: 'hidden',
@@ -207,7 +207,7 @@ export default function HomePage() {
                   overflowX: 'hidden',
                 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/90 via-ocean-deep/50 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
                 <div className="absolute inset-0 bg-[url('/destinations/banco-chinchorro-card.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                 
                 <div className="relative z-20 p-8 h-full flex flex-col justify-end text-white">
@@ -234,7 +234,7 @@ export default function HomePage() {
                   overflowX: 'hidden',
                 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/90 via-ocean-deep/50 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
                 <div className="absolute inset-0 bg-[url('/destinations/mahahual-card.jpg')] bg-cover bg-center group-hover:scale-110 transition-transform duration-700" />
                 
                 <div className="relative z-20 p-8 h-full flex flex-col justify-end text-white">

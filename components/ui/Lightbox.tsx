@@ -111,13 +111,9 @@ export default function Lightbox({ images, currentIndex, onClose, onNext, onPrev
             }}
           />
           
-          {/* Caption */}
+          {/* Counter */}
           <div className="mt-4 text-center">
-            <p className="text-white text-lg font-semibold">{currentImage.alt}</p>
-            {currentImage.location && (
-              <p className="text-gray-300 text-sm mt-1">{currentImage.location}</p>
-            )}
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-gray-400 text-sm">
               {currentIndex + 1} {t('gallery.lightbox.counter')} {images.length}
             </p>
           </div>

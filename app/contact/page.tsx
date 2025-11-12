@@ -29,7 +29,7 @@ export default function ContactPage() {
     email: '',
     phone: '',
     language: 'en',
-    certification: 'openwater',
+    certification: 'none',
     interests: [],
     divers: '1',
     date: '',
@@ -92,7 +92,7 @@ export default function ContactPage() {
         email: '',
         phone: '',
         language: 'en',
-        certification: 'openwater',
+        certification: 'none',
         interests: [],
         divers: '1',
         date: '',
@@ -124,11 +124,11 @@ export default function ContactPage() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[300px] lg:min-h-[400px] flex items-center justify-center text-white"
+        className="relative min-h-[500px] lg:min-h-[600px] flex items-center justify-center text-white mt-24 lg:mt-32"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/80 to-ocean-deep/90 z-0">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
+          <div className="absolute inset-0 bg-[url('/backgrounds/contact-hero.jpg')] bg-cover bg-center opacity-70" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -137,7 +137,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white">
               {t('contact.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">

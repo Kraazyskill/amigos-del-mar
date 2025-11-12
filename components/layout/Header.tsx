@@ -81,10 +81,11 @@ export default function Header() {
             <Image 
               src="/logo.png" 
               alt="Amigos del Mar" 
-              width={180} 
-              height={71}
+              width={480} 
+              height={190}
               priority
-              className="lg:w-[240px] lg:h-[95px]"
+              quality={100}
+              className="w-[180px] h-auto lg:w-[240px]"
               style={{ flexShrink: 0, maxHeight: '80px', width: 'auto', height: 'auto', maxWidth: '180px' }}
             />
           </Link>
@@ -96,7 +97,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'font-medium transition-colors relative py-2',
+                  'font-medium transition-colors relative py-2 text-lg tracking-wide',
                   pathname === link.href
                     ? 'text-white border-b-2 border-white'
                     : 'text-white/90 hover:text-white'
@@ -116,7 +117,7 @@ export default function Header() {
               style={{ flexShrink: 0 }}
             >
               <Globe size={20} style={{ flexShrink: 0 }} />
-              <span className="font-medium text-sm uppercase">{language}</span>
+              <span className="font-semibold text-base uppercase tracking-wider">{language}</span>
             </button>
           </div>
 
@@ -130,7 +131,7 @@ export default function Header() {
               style={{ flexShrink: 0, pointerEvents: 'auto' }}
             >
               <Globe size={20} style={{ flexShrink: 0 }} />
-              <span className="font-medium text-sm uppercase">{language}</span>
+              <span className="font-semibold text-base uppercase tracking-wider">{language}</span>
             </button>
             
             {/* Mobile Menu Button */}
@@ -182,7 +183,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                'px-6 py-4 rounded-lg font-medium transition-colors text-lg',
+                'px-6 py-4 rounded-lg font-semibold transition-colors text-xl tracking-wide',
                 pathname === link.href
                   ? 'bg-white text-ocean-blue'
                   : 'text-white hover:bg-white/20 border border-white/20'

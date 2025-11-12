@@ -54,7 +54,7 @@ export default function BancoChinchorro() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[400px] lg:min-h-[500px] flex items-center justify-center text-white overflow-hidden"
+        className="relative min-h-[500px] lg:min-h-[600px] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
@@ -93,9 +93,9 @@ export default function BancoChinchorro() {
               <span className="text-gray-300">{t('nav.bancoChinchorro')}</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              {t('chinchorro.hero.title')}
-            </h1>
+             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white">
+               {t('chinchorro.hero.title')}
+             </h1>
             <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">
               {t('chinchorro.hero.subtitle')}
             </p>
@@ -160,7 +160,7 @@ export default function BancoChinchorro() {
       </section>
 
       {/* Chinchorro Map & Video Section */}
-      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -244,44 +244,8 @@ export default function BancoChinchorro() {
         </div>
       </section>
 
-      {/* Additional Dive Spots Available */}
-      <section className="py-12 lg:py-16 bg-white" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto bg-ocean-light/30 border-2 border-ocean-blue/20 rounded-xl p-8"
-          >
-            <h3 className="text-2xl font-bold text-ocean-deep mb-4 text-center">
-              {language === 'es' ? 'Más Sitios de Buceo Disponibles' : 'More Dive Sites Available'}
-            </h3>
-            <p className="text-gray-700 text-center mb-6">
-              {language === 'es' 
-                ? 'Amigos del Mar también puede organizar inmersiones bajo petición en estos sitios adicionales:' 
-                : 'Amigos del Mar can also arrange dives on request to these additional sites:'}
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Amigos Wall Deep', 'Cayo Lobos', 'Dandy', 'El Cornejo', 'Fish Market', 'Two Towers', 'The Maze', 'Paraiso'].map((site) => (
-                <span 
-                  key={site}
-                  className="px-4 py-2 bg-white text-ocean-blue border border-ocean-blue/30 rounded-lg text-sm font-medium shadow-sm"
-                >
-                  {site}
-                </span>
-              ))}
-            </div>
-            <p className="text-gray-600 text-center mt-6 text-sm italic">
-              {language === 'es'
-                ? 'Contacta con nosotros para más información sobre estos sitios especiales'
-                : 'Contact us for more information about these special sites'}
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Dive Sites Section */}
-      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -355,7 +319,7 @@ export default function BancoChinchorro() {
       </section>
 
       {/* Trip Details Section */}
-      <section className="py-16 lg:py-24 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+      <section className="py-8 lg:py-12 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -479,6 +443,42 @@ export default function BancoChinchorro() {
           >
             <p className="text-lg text-gray-600 mb-2">{t('chinchorro.trip.duration')}</p>
             <p className="text-gray-600">{t('chinchorro.trip.departure')} • {t('chinchorro.trip.return')}</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Additional Dive Spots Available */}
+      <section className="py-12 lg:py-16 bg-gray-50" style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto bg-ocean-light/30 border-2 border-ocean-blue/20 rounded-xl p-8"
+          >
+            <h3 className="text-2xl font-bold text-ocean-deep mb-4 text-center">
+              {language === 'es' ? 'Más Sitios de Buceo Disponibles' : 'More Dive Sites Available'}
+            </h3>
+            <p className="text-gray-700 text-center mb-6">
+              {language === 'es' 
+                ? 'Amigos del Mar también puede organizar inmersiones bajo petición en estos sitios adicionales:' 
+                : 'Amigos del Mar can also arrange dives on request to these additional sites:'}
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {['Amigos Wall Deep', 'Cayo Lobos', 'Dandy', 'El Cornejo', 'Fish Market', 'Two Towers', 'The Maze', 'Paraiso'].map((site) => (
+                <span 
+                  key={site}
+                  className="px-4 py-2 bg-white text-ocean-blue border border-ocean-blue/30 rounded-lg text-sm font-medium shadow-sm"
+                >
+                  {site}
+                </span>
+              ))}
+            </div>
+            <p className="text-gray-600 text-center mt-6 text-sm italic">
+              {language === 'es'
+                ? 'Contacta con nosotros para más información sobre estos sitios especiales'
+                : 'Contact us for more information about these special sites'}
+            </p>
           </motion.div>
         </div>
       </section>

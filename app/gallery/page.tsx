@@ -29,7 +29,7 @@ export default function GalleryPage() {
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
       {/* Hero Section */}
       <section
-        className="relative min-h-[300px] lg:min-h-[400px] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
+        className="relative min-h-[500px] lg:min-h-[600px] flex items-center justify-center text-white overflow-hidden mt-24 lg:mt-32"
         style={{ maxWidth: '100vw', overflowX: 'hidden' }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/70 z-0">
@@ -59,9 +59,9 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              {t('gallery.hero.title')}
-            </h1>
+             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white">
+               {t('gallery.hero.title')}
+             </h1>
             <p className="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">
               {t('gallery.hero.subtitle')}
             </p>
@@ -90,20 +90,6 @@ export default function GalleryPage() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                   style={{ backgroundImage: `url(${item.src})` }}
                 />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/80 via-ocean-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-4 w-full">
-                    <p className="text-white font-semibold text-sm" style={{ wordBreak: 'break-word' }}>
-                      {item.alt}
-                    </p>
-                    {item.location && (
-                      <p className="text-gray-300 text-xs mt-1" style={{ wordBreak: 'break-word' }}>
-                        {item.location}
-                      </p>
-                    )}
-                  </div>
-                </div>
               </div>
             ))}
           </div>
