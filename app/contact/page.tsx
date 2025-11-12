@@ -75,16 +75,16 @@ export default function ContactPage() {
     setSubmitStatus('idle')
 
     try {
-      // Simulate API call - replace with actual email service
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      // Send form data to API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
       
-      // In production, send to your email service:
-      // const response = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // })
-      // if (!response.ok) throw new Error('Failed to send')
+      if (!response.ok) {
+        throw new Error('Failed to send email')
+      }
 
       setSubmitStatus('success')
       setFormData({
