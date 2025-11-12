@@ -419,7 +419,7 @@ export default function ContactPage() {
                         className="text-ocean-blue hover:text-ocean-turquoise transition-colors"
                         style={{ wordBreak: 'break-all' }}
                       >
-                        984-151-6758
+                        +52 984-151-6758
                       </a>
                     </div>
                   </div>

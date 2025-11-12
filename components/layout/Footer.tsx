@@ -82,7 +82,7 @@ export default function Footer() {
                   className="text-gray-300 hover:text-ocean-turquoise transition-colors text-sm"
                   style={{ wordBreak: 'break-all' }}
                 >
-                  984-151-6758
+                  +52 984-151-6758
                 </a>
               </li>
               <li className="flex items-start gap-3">
