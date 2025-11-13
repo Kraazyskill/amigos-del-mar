@@ -20,14 +20,25 @@ export async function POST(request: NextRequest) {
       : 'Not specified'
 
     // Create transporter using IONOS SMTP
+    const port = parseInt(process.env.SMTP_PORT || '587')
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.ionos.com',
-      port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: false, // true for 465, false for 587
+      port: port,
+      secure: port === 465, // true for 465 (SSL), false for 587 (TLS)
       auth: {
-        user: process.env.SMTP_USER, // hola@amigosdelmar.net
-        pass: process.env.SMTP_PASSWORD, // IONOS email password
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
       },
+      debug: true, // Enable debug output
+      logger: true, // Log to console
+    })
+
+    console.log('📧 SMTP Config:', {
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      user: process.env.SMTP_USER,
+      hasPassword: !!process.env.SMTP_PASSWORD,
+      secure: port === 465,
     })
 
     // Email content
@@ -73,9 +84,13 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true }, { status: 200 })
   } catch (error) {
-    console.error('Error sending email:', error)
+    console.error('❌ Error sending email:', error)
+    if (error instanceof Error) {
+      console.error('Error message:', error.message)
+      console.error('Error stack:', error.stack)
+    }
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: 'Failed to send email', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     )
   }
