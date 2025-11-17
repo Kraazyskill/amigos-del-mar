@@ -14,6 +14,15 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
   if (language === 'es') {
     return [
       {
+        name: '3 Primas',
+        depth: '12-16m',
+        level: 'Principiante',
+        description: 'Ubicado en la parte sur del atolón, esta sección de arrecife lleva el nombre de tres formaciones de arrecife idénticas separadas por áreas arenosas. Las hermosas estructuras de coral lo convierten en una excelente inmersión superficial, variando de 12 a 16 metros. El área está repleta de vida marina, incluyendo tiburones nodriza, tortugas carey, numerosas anguilas escondidas en grietas, así como muchas langostas y rayas que llaman a este arrecife su hogar. Es una inmersión fácil generalmente sin corriente, lo que la hace ideal para principiantes o como una inmersión final relajante del día.',
+        marine: 'Tiburones nodriza, tortugas carey, anguilas, langostas, rayas',
+        season: 'Sin corriente - Ideal para principiantes',
+        image: '/dive-sites/banco-chinchorro/3%20primas.jpg',
+      },
+      {
         name: 'Aquario 1 & 2',
         depth: '14m prom (máx 18m)',
         level: 'Todos los Niveles',
@@ -32,13 +41,22 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
         image: '/dive-sites/banco-chinchorro/baliza.jpg',
       },
       {
-        name: 'Gata',
-        depth: 'Máx 20m',
-        level: 'Intermedio',
-        description: 'Gata se refiere al nombre español para los tiburones nodriza, que son el punto culminante de este sitio de buceo. A diferencia de todos los demás lugares, los tiburones nodriza son muy activos y siguen a los buzos hasta el final de la inmersión, acercándose al grupo con curiosidad y haciendo giros suaves para que puedas experimentar toda su gracia, fuerza y belleza de una manera espectacular. El sitio está dividido en tres secciones de arrecife diferentes, cruzando dos pendientes arenosas para navegar entre ellas. Los corales están realmente saludables y entre los tiburones nodriza, puedes esperar encontrar peces de arrecife en todos los diferentes colores, formas y tamaños, así como meros negros, tortugas carey y verdes, morenas, langostas gigantes. Un enorme cardumen de sardinas pasa el rato en el tercer arrecife, que es todo un espectáculo.',
-        marine: 'Tiburones nodriza activos, meros negros, tortugas carey y verdes, morenas, langostas gigantes, cardúmenes de sardinas',
-        season: 'Profundidad máx: 20m',
-        image: '/dive-sites/banco-chinchorro/gata.jpg',
+        name: 'Cameron\'s Playground',
+        depth: '12-15m prom',
+        level: 'Todos los Niveles',
+        description: 'Este sitio de buceo fue nombrado en honor a nuestro buen amigo Cameron Donaldson, en conmemoración del día en que usamos sus DPVs para explorar algunos de los arrecifes de caída más profundos en Banco Chinchorro con nuestro amigo Robert Stansfield. La visibilidad era cristalina ese día — una de esas inmersiones perfectas del Caribe. Mientras navegábamos a alrededor de 30 metros, vimos una impresionante formación de arrecife elevándose desde abajo. Decidimos girar hacia ella y terminar nuestra inmersión explorando la sección más superficial. Lo que descubrimos fue una barrera de arrecife más pequeña repleta de vida marina y ofreciendo una visibilidad soberbia casi todo el año. El sitio ahora es conocido por sus tiburones nodriza, tiburones de arrecife del Caribe, grandes meros y vastos cardúmenes de coloridos peces de arrecife. Usualmente comenzamos la inmersión de sur a norte, deslizándonos lentamente a través de los vibrantes jardines de coral.',
+        marine: 'Tiburones nodriza, tiburones de arrecife del Caribe, grandes meros, cardúmenes de peces de arrecife coloridos',
+        season: 'Excelente visibilidad todo el año',
+        image: '/dive-sites/banco-chinchorro/cams%20play.jpg',
+      },
+      {
+        name: 'Coral Negro',
+        depth: '15m jardín / 45m pared',
+        level: 'Avanzado',
+        description: 'Coral Negro es una de las inmersiones en pared más espectaculares de Banco Chinchorro. La topografía del sitio lo tiene todo — desde un vibrante jardín de coral que comienza alrededor de 15 metros hasta una dramática pared que cae a profundidades de aproximadamente 45 metros. Desde su descubrimiento, Coral Negro ha permanecido como uno de nuestros sitios favoritos de todos los tiempos en el atolón. Cada inmersión aquí ofrece algo inolvidable. Usualmente comenzamos en la punta norte del arrecife y nos deslizamos a través de un laberinto de formaciones de coral repletas de vida. Tiburones de arrecife residentes a menudo se ven navegando a lo largo del borde azul de la pared, y frecuentemente son lo suficientemente curiosos como para acercarse a los buzos para verlos más de cerca. También podrías encontrar tiburones nodriza, graciosas rayas águila gigantes, grandes meros y cardúmenes brillantes de peces cebo. Las tortugas caguama y carey se avistan comúnmente descansando o escondiéndose entre los corales en las secciones más superficiales.',
+        marine: 'Tiburones de arrecife, tiburones nodriza, rayas águila gigantes, grandes meros, cardúmenes de peces cebo, tortugas caguama y carey',
+        season: 'Dos opciones: jardín superficial (15-20m) o pared profunda con Nitrox (24-30m)',
+        image: '/dive-sites/banco-chinchorro/jardines%20de%20coral%20negro.jpg',
       },
       {
         name: 'El Solitario',
@@ -48,6 +66,15 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
         marine: 'Tiburones de arrecife, rayas, tiburones nodriza, meros, pargos, tortugas',
         season: 'Profundidad máx: 26m',
         image: '/dive-sites/banco-chinchorro/el%20solitario%20.png',
+      },
+      {
+        name: 'Gata',
+        depth: 'Máx 20m',
+        level: 'Intermedio',
+        description: 'Gata se refiere al nombre español para los tiburones nodriza, que son el punto culminante de este sitio de buceo. A diferencia de todos los demás lugares, los tiburones nodriza son muy activos y siguen a los buzos hasta el final de la inmersión, acercándose al grupo con curiosidad y haciendo giros suaves para que puedas experimentar toda su gracia, fuerza y belleza de una manera espectacular. El sitio está dividido en tres secciones de arrecife diferentes, cruzando dos pendientes arenosas para navegar entre ellas. Los corales están realmente saludables y entre los tiburones nodriza, puedes esperar encontrar peces de arrecife en todos los diferentes colores, formas y tamaños, así como meros negros, tortugas carey y verdes, morenas, langostas gigantes. Un enorme cardumen de sardinas pasa el rato en el tercer arrecife, que es todo un espectáculo.',
+        marine: 'Tiburones nodriza activos, meros negros, tortugas carey y verdes, morenas, langostas gigantes, cardúmenes de sardinas',
+        season: 'Profundidad máx: 20m',
+        image: '/dive-sites/banco-chinchorro/gata.jpg',
       },
       {
         name: 'Gonzales 1 & 2',
@@ -103,38 +130,20 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
         season: 'Excelente para coral y diversidad marina',
         image: '/dive-sites/banco-chinchorro/teresitas.jpg',
       },
-      {
-        name: 'Coral Negro',
-        depth: '15m jardín / 45m pared',
-        level: 'Avanzado',
-        description: 'Coral Negro es una de las inmersiones en pared más espectaculares de Banco Chinchorro. La topografía del sitio lo tiene todo — desde un vibrante jardín de coral que comienza alrededor de 15 metros hasta una dramática pared que cae a profundidades de aproximadamente 45 metros. Desde su descubrimiento, Coral Negro ha permanecido como uno de nuestros sitios favoritos de todos los tiempos en el atolón. Cada inmersión aquí ofrece algo inolvidable. Usualmente comenzamos en la punta norte del arrecife y nos deslizamos a través de un laberinto de formaciones de coral repletas de vida. Tiburones de arrecife residentes a menudo se ven navegando a lo largo del borde azul de la pared, y frecuentemente son lo suficientemente curiosos como para acercarse a los buzos para verlos más de cerca. También podrías encontrar tiburones nodriza, graciosas rayas águila gigantes, grandes meros y cardúmenes brillantes de peces cebo. Las tortugas caguama y carey se avistan comúnmente descansando o escondiéndose entre los corales en las secciones más superficiales.',
-        marine: 'Tiburones de arrecife, tiburones nodriza, rayas águila gigantes, grandes meros, cardúmenes de peces cebo, tortugas caguama y carey',
-        season: 'Dos opciones: jardín superficial (15-20m) o pared profunda con Nitrox (24-30m)',
-        image: '/dive-sites/banco-chinchorro/jardines%20de%20coral%20negro.jpg',
-      },
-      {
-        name: '3 Primas',
-        depth: '12-16m',
-        level: 'Principiante',
-        description: 'Ubicado en la parte sur del atolón, esta sección de arrecife lleva el nombre de tres formaciones de arrecife idénticas separadas por áreas arenosas. Las hermosas estructuras de coral lo convierten en una excelente inmersión superficial, variando de 12 a 16 metros. El área está repleta de vida marina, incluyendo tiburones nodriza, tortugas carey, numerosas anguilas escondidas en grietas, así como muchas langostas y rayas que llaman a este arrecife su hogar. Es una inmersión fácil generalmente sin corriente, lo que la hace ideal para principiantes o como una inmersión final relajante del día.',
-        marine: 'Tiburones nodriza, tortugas carey, anguilas, langostas, rayas',
-        season: 'Sin corriente - Ideal para principiantes',
-        image: '/dive-sites/banco-chinchorro/3%20primas.jpg',
-      },
-      {
-        name: 'Cameron\'s Playground',
-        depth: '12-15m prom',
-        level: 'Todos los Niveles',
-        description: 'Este sitio de buceo fue nombrado en honor a nuestro buen amigo Cameron Donaldson, en conmemoración del día en que usamos sus DPVs para explorar algunos de los arrecifes de caída más profundos en Banco Chinchorro con nuestro amigo Robert Stansfield. La visibilidad era cristalina ese día — una de esas inmersiones perfectas del Caribe. Mientras navegábamos a alrededor de 30 metros, vimos una impresionante formación de arrecife elevándose desde abajo. Decidimos girar hacia ella y terminar nuestra inmersión explorando la sección más superficial. Lo que descubrimos fue una barrera de arrecife más pequeña repleta de vida marina y ofreciendo una visibilidad soberbia casi todo el año. El sitio ahora es conocido por sus tiburones nodriza, tiburones de arrecife del Caribe, grandes meros y vastos cardúmenes de coloridos peces de arrecife. Usualmente comenzamos la inmersión de sur a norte, deslizándonos lentamente a través de los vibrantes jardines de coral.',
-        marine: 'Tiburones nodriza, tiburones de arrecife del Caribe, grandes meros, cardúmenes de peces de arrecife coloridos',
-        season: 'Excelente visibilidad todo el año',
-        image: '/dive-sites/banco-chinchorro/cams%20play.jpg',
-      },
-    ]
+    ].sort((a, b) => a.name.localeCompare(b.name, 'es'))
   }
 
   // English
   return [
+    {
+      name: '3 Primas',
+      depth: '40-50ft (12-16m)',
+      level: 'Beginner',
+      description: 'Located in the southern part of the atoll, this reef section is named after three identical reef formations separated by sandy areas. The beautiful coral structures make it an excellent shallow dive, ranging from 40 to 50 feet (10 to 13 meters). The area is teeming with marine life, including nurse sharks, hawksbill turtles, numerous eels hiding in crevices, as well as plenty of lobsters and rays that call this reef home. It is an easy dive with usually no current, making it ideal for beginners or as a relaxing final dive of the day.',
+      marine: 'Nurse sharks, hawksbill turtles, eels, lobsters, rays',
+      season: 'No current - Ideal for beginners',
+      image: '/dive-sites/banco-chinchorro/3%20primas.jpg',
+    },
     {
       name: 'Aquario 1 & 2',
       depth: '14m avg (max 18m)',
@@ -154,13 +163,22 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
       image: '/dive-sites/banco-chinchorro/baliza.jpg',
     },
     {
-      name: 'Gata',
-      depth: 'Max 20m',
-      level: 'Intermediate',
-      description: 'Gata refers to the Spanish name for nurse sharks, which are the highlight of this dive site. Unlike in all other places, the nurse sharks are highly active and follow the divers around until the end of dive, approaching the group curiously and making gentle turns so you can experience all their grace, strength and beauty in a spectacular way. The site is divided into three different reef sections, crossing over two sandy slopes to navigate between them. The corals are really healthy and among the nurse sharks, you can expect to encounter reef fish in all different colours, shapes, and sizes, as well as black groupers, hawksbill and green turtles, moray eels, giant lobsters. A huge school of sardines hang out on the third reef which is quite a spectacle.',
-      marine: 'Active nurse sharks, black groupers, hawksbill & green turtles, moray eels, giant lobsters, sardine schools',
-      season: 'Max depth: 20m',
-      image: '/dive-sites/banco-chinchorro/gata.jpg',
+      name: 'Cameron\'s Playground',
+      depth: '40-50ft avg (12-15m)',
+      level: 'All Levels',
+      description: 'This dive site was named after our good friend Cameron Donaldson, in honor of the day we used his DPVs to explore some of the deeper drop-off reefs in Banco Chinchorro with our buddy Robert Stansfield. The visibility was crystal clear that day—one of those perfect Caribbean dives. While cruising along at around 100 feet, we spotted a stunning reef formation rising from below. We decided to turn toward it and finish our dive exploring the shallower section instead. What we discovered was a smaller reef barrier teeming with marine life and offering superb visibility almost all year long. The site is now known for its nurse sharks, Caribbean reef sharks, large groupers, and vast schools of colorful reef fish. We usually start the dive from south to north, gliding slowly through the vibrant coral gardens. Because the reef sections are compact and full of life, a relaxed pace lets you take in every detail of the brilliant coral formations and the bustling aquatic life that surrounds you.',
+      marine: 'Nurse sharks, Caribbean reef sharks, large groupers, vast schools of colorful reef fish',
+      season: 'Excellent visibility year-round',
+      image: '/dive-sites/banco-chinchorro/cams%20play.jpg',
+    },
+    {
+      name: 'Coral Negro',
+      depth: '50ft garden / 150ft wall',
+      level: 'Advanced',
+      description: 'Coral Negro is one of the most spectacular wall dives in Banco Chinchorro. The site\'s topography has it all — from a vibrant coral garden that begins around 50 feet to a dramatic wall that drops to depths of roughly 150 feet. Since its discovery, Coral Negro has remained one of our all-time favorite sites at the atoll. Every dive here offers something unforgettable. We usually begin at the northern tip of the reef and drift through a maze of coral formations teeming with life. Resident reef sharks are often seen cruising along the blue edge of the wall, and they\'re frequently curious enough to approach divers for a closer look. You might also encounter nurse sharks, graceful giant eagle rays, large groupers, and shimmering schools of baitfish. Loggerhead and hawksbill turtles are commonly spotted resting or hiding among the corals in the shallower sections.',
+      marine: 'Reef sharks, nurse sharks, giant eagle rays, large groupers, baitfish schools, loggerhead & hawksbill turtles',
+      season: 'Two options: Shallow coral garden (50-65ft) or deep wall with Nitrox (80-100ft)',
+      image: '/dive-sites/banco-chinchorro/jardines%20de%20coral%20negro.jpg',
     },
     {
       name: 'El Solitario',
@@ -170,6 +188,15 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
       marine: 'Reef sharks, rays, nurse sharks, groupers, snappers, turtles',
       season: 'Max depth: 26m',
       image: '/dive-sites/banco-chinchorro/el%20solitario%20.png',
+    },
+    {
+      name: 'Gata',
+      depth: 'Max 20m',
+      level: 'Intermediate',
+      description: 'Gata refers to the Spanish name for nurse sharks, which are the highlight of this dive site. Unlike in all other places, the nurse sharks are highly active and follow the divers around until the end of dive, approaching the group curiously and making gentle turns so you can experience all their grace, strength and beauty in a spectacular way. The site is divided into three different reef sections, crossing over two sandy slopes to navigate between them. The corals are really healthy and among the nurse sharks, you can expect to encounter reef fish in all different colours, shapes, and sizes, as well as black groupers, hawksbill and green turtles, moray eels, giant lobsters. A huge school of sardines hang out on the third reef which is quite a spectacle.',
+      marine: 'Active nurse sharks, black groupers, hawksbill & green turtles, moray eels, giant lobsters, sardine schools',
+      season: 'Max depth: 20m',
+      image: '/dive-sites/banco-chinchorro/gata.jpg',
     },
     {
       name: 'Gonzales 1 & 2',
@@ -225,33 +252,6 @@ export function getBancoChinchorroDiveSites(language: Language): DiveSite[] {
       season: 'Great for coral and marine diversity',
       image: '/dive-sites/banco-chinchorro/teresitas.jpg',
     },
-    {
-      name: 'Coral Negro',
-      depth: '50ft garden / 150ft wall',
-      level: 'Advanced',
-      description: 'Coral Negro is one of the most spectacular wall dives in Banco Chinchorro. The site\'s topography has it all — from a vibrant coral garden that begins around 50 feet to a dramatic wall that drops to depths of roughly 150 feet. Since its discovery, Coral Negro has remained one of our all-time favorite sites at the atoll. Every dive here offers something unforgettable. We usually begin at the northern tip of the reef and drift through a maze of coral formations teeming with life. Resident reef sharks are often seen cruising along the blue edge of the wall, and they\'re frequently curious enough to approach divers for a closer look. You might also encounter nurse sharks, graceful giant eagle rays, large groupers, and shimmering schools of baitfish. Loggerhead and hawksbill turtles are commonly spotted resting or hiding among the corals in the shallower sections.',
-      marine: 'Reef sharks, nurse sharks, giant eagle rays, large groupers, baitfish schools, loggerhead & hawksbill turtles',
-      season: 'Two options: Shallow coral garden (50-65ft) or deep wall with Nitrox (80-100ft)',
-      image: '/dive-sites/banco-chinchorro/jardines%20de%20coral%20negro.jpg',
-    },
-    {
-      name: '3 Primas',
-      depth: '40-50ft (12-16m)',
-      level: 'Beginner',
-      description: 'Located in the southern part of the atoll, this reef section is named after three identical reef formations separated by sandy areas. The beautiful coral structures make it an excellent shallow dive, ranging from 40 to 50 feet (10 to 13 meters). The area is teeming with marine life, including nurse sharks, hawksbill turtles, numerous eels hiding in crevices, as well as plenty of lobsters and rays that call this reef home. It is an easy dive with usually no current, making it ideal for beginners or as a relaxing final dive of the day.',
-      marine: 'Nurse sharks, hawksbill turtles, eels, lobsters, rays',
-      season: 'No current - Ideal for beginners',
-      image: '/dive-sites/banco-chinchorro/3%20primas.jpg',
-    },
-    {
-      name: 'Cameron\'s Playground',
-      depth: '40-50ft avg (12-15m)',
-      level: 'All Levels',
-      description: 'This dive site was named after our good friend Cameron Donaldson, in honor of the day we used his DPVs to explore some of the deeper drop-off reefs in Banco Chinchorro with our buddy Robert Stansfield. The visibility was crystal clear that day—one of those perfect Caribbean dives. While cruising along at around 100 feet, we spotted a stunning reef formation rising from below. We decided to turn toward it and finish our dive exploring the shallower section instead. What we discovered was a smaller reef barrier teeming with marine life and offering superb visibility almost all year long. The site is now known for its nurse sharks, Caribbean reef sharks, large groupers, and vast schools of colorful reef fish. We usually start the dive from south to north, gliding slowly through the vibrant coral gardens. Because the reef sections are compact and full of life, a relaxed pace lets you take in every detail of the brilliant coral formations and the bustling aquatic life that surrounds you.',
-      marine: 'Nurse sharks, Caribbean reef sharks, large groupers, vast schools of colorful reef fish',
-      season: 'Excellent visibility year-round',
-      image: '/dive-sites/banco-chinchorro/cams%20play.jpg',
-    },
-  ]
+  ].sort((a, b) => a.name.localeCompare(b.name, 'en'))
 }
 

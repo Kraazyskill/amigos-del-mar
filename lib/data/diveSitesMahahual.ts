@@ -94,7 +94,7 @@ export function getMahahualDiveSites(language: Language): DiveSite[] {
         season: 'Prueba tus habilidades de navegación',
         image: '/dive-sites/mahahual/rio-bermejo.jpg',
       },
-    ]
+    ].sort((a, b) => a.name.localeCompare(b.name, 'es'))
   }
 
   // English
@@ -180,6 +180,6 @@ export function getMahahualDiveSites(language: Language): DiveSite[] {
       season: 'Test your navigation skills',
       image: '/dive-sites/mahahual/rio-bermejo.jpg',
     },
-  ]
+  ].sort((a, b) => a.name.localeCompare(b.name, 'en'))
 }
 
