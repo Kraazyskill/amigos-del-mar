@@ -177,7 +177,14 @@ export default function ContactPage() {
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all ${
                       errors.name ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                    style={{ 
+                      maxWidth: '100%', 
+                      boxSizing: 'border-box',
+                      WebkitAppearance: 'none',
+                      MozAppearance: 'none',
+                      appearance: 'none',
+                      width: '100%'
+                    }}
                   />
                   {errors.name && (
                     <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -198,7 +205,14 @@ export default function ContactPage() {
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all ${
                       errors.email ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                    style={{ 
+                      maxWidth: '100%', 
+                      boxSizing: 'border-box',
+                      WebkitAppearance: 'none',
+                      MozAppearance: 'none',
+                      appearance: 'none',
+                      width: '100%'
+                    }}
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -217,7 +231,14 @@ export default function ContactPage() {
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder={t('contact.form.phone.placeholder')}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                    style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                    style={{ 
+                      maxWidth: '100%', 
+                      boxSizing: 'border-box',
+                      WebkitAppearance: 'none',
+                      MozAppearance: 'none',
+                      appearance: 'none',
+                      width: '100%'
+                    }}
                   />
                 </div>
 
@@ -232,7 +253,14 @@ export default function ContactPage() {
                       value={formData.language}
                       onChange={(e) => setFormData({ ...formData, language: e.target.value })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                      style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                      style={{ 
+                        maxWidth: '100%', 
+                        boxSizing: 'border-box',
+                        WebkitAppearance: 'none',
+                        MozAppearance: 'none',
+                        appearance: 'none',
+                        width: '100%'
+                      }}
                     >
                       <option value="en">{t('contact.form.language.english')}</option>
                       <option value="es">{t('contact.form.language.spanish')}</option>
@@ -248,7 +276,14 @@ export default function ContactPage() {
                       value={formData.certification}
                       onChange={(e) => setFormData({ ...formData, certification: e.target.value })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                      style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                      style={{ 
+                        maxWidth: '100%', 
+                        boxSizing: 'border-box',
+                        WebkitAppearance: 'none',
+                        MozAppearance: 'none',
+                        appearance: 'none',
+                        width: '100%'
+                      }}
                     >
                       <option value="none">{t('contact.form.certification.none')}</option>
                       <option value="openwater">{t('contact.form.certification.openwater')}</option>
@@ -300,7 +335,14 @@ export default function ContactPage() {
                       value={formData.divers}
                       onChange={(e) => setFormData({ ...formData, divers: e.target.value })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                      style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                      style={{ 
+                        maxWidth: '100%', 
+                        boxSizing: 'border-box',
+                        WebkitAppearance: 'none',
+                        MozAppearance: 'none',
+                        appearance: 'none',
+                        width: '100%'
+                      }}
                     />
                   </div>
 
@@ -314,7 +356,14 @@ export default function ContactPage() {
                       value={formData.date}
                       onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all"
-                      style={{ maxWidth: '100%', boxSizing: 'border-box' }}
+                      style={{ 
+                        maxWidth: '100%', 
+                        boxSizing: 'border-box',
+                        WebkitAppearance: 'none',
+                        MozAppearance: 'none',
+                        appearance: 'none',
+                        width: '100%'
+                      }}
                     />
                   </div>
                 </div>
@@ -333,7 +382,15 @@ export default function ContactPage() {
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-ocean-blue focus:border-transparent transition-all resize-none ${
                       errors.message ? 'border-red-500' : 'border-gray-300'
                     }`}
-                    style={{ maxWidth: '100%', boxSizing: 'border-box', wordBreak: 'break-word' }}
+                    style={{ 
+                      maxWidth: '100%', 
+                      boxSizing: 'border-box', 
+                      wordBreak: 'break-word',
+                      WebkitAppearance: 'none',
+                      MozAppearance: 'none',
+                      appearance: 'none',
+                      width: '100%'
+                    }}
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
