@@ -46,8 +46,8 @@ export const es = {
   
   // Página de Inicio - Características
   'home.features.title': 'Por Qué Bucear Con Nosotros',
-  'home.features.sdi.title': 'CENTRO DE BUCEO SDI',
-  'home.features.sdi.description': 'Guías profesionales y experimentados con años de experiencia en buceo y enseñanza en aguas del Caribe Mexicano.',
+  'home.features.sdi.title': 'Centro de buceo SDI/PADI',
+  'home.features.sdi.description': 'Guías profesionales con experiencia en buceo y enseñanza en aguas del Caribe Mexicano.',
   'home.features.equipment.title': 'Equipo Moderno',
   'home.features.equipment.description': 'Equipo de buceo de alta calidad y bien mantenido para tu seguridad y comodidad.',
   'home.features.boutique.title': 'Tienda de Buceo Boutique',
@@ -258,7 +258,7 @@ export const es = {
   'contact.form.email': 'Correo Electrónico',
   'contact.form.email.placeholder': 'juan@ejemplo.com',
   'contact.form.phone': 'Teléfono',
-  'contact.form.phone.placeholder': '+52 983 123 4567',
+  'contact.form.phone.placeholder': '+52 443 236 2684',
   'contact.form.language': 'Idioma Preferido',
   'contact.form.language.english': 'Inglés',
   'contact.form.language.spanish': 'Español',
@@ -292,6 +292,8 @@ export const es = {
   'contact.info.hours': 'Horario de Atención',
   'contact.info.hours.value': 'Lunes - Domingo: 9:00 AM - 7:00 PM',
   'contact.info.social': 'Síguenos',
+  'contact.info.facebook': 'Facebook',
+  'contact.info.facebook.page': 'Amigos del Mar Mahahual',
   
   'contact.map.title': 'Encuéntranos',
   

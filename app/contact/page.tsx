@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Phone, Mail, Clock, Send, Check, AlertCircle } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Send, Check, AlertCircle, Facebook } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { formatEmail } from '@/lib/utils'
 
@@ -472,11 +472,11 @@ export default function ContactPage() {
                         {t('contact.info.phone')}
                       </h3>
                       <a
-                        href="tel:+529841516758"
+                        href="tel:+524432362684"
                         className="text-ocean-blue hover:text-ocean-turquoise transition-colors"
                         style={{ wordBreak: 'break-all' }}
                       >
-                        +52 984-151-6758
+                        +52 443 236 2684
                       </a>
                     </div>
                   </div>
@@ -496,6 +496,27 @@ export default function ContactPage() {
                         style={{ wordBreak: 'break-all' }}
                       >
                         hola@amigosdelmar.net
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Facebook */}
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-ocean-light flex items-center justify-center" style={{ flexShrink: 0 }}>
+                      <Facebook size={24} className="text-ocean-blue" style={{ flexShrink: 0 }} />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-ocean-deep mb-1">
+                        {t('contact.info.facebook')}
+                      </h3>
+                      <a
+                        href="https://www.facebook.com/amigosdelmarmahahual"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-ocean-blue hover:text-ocean-turquoise transition-colors"
+                        style={{ wordBreak: 'break-word' }}
+                      >
+                        {t('contact.info.facebook.page')}
                       </a>
                     </div>
                   </div>

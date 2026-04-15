@@ -46,8 +46,8 @@ export const en = {
   
   // Home Page - Features
   'home.features.title': 'Why Dive With Us',
-  'home.features.sdi.title': 'SDI DIVE CENTER',
-  'home.features.sdi.description': 'Professional, experienced guides with years of diving and teaching expertise in Mexican Caribbean waters.',
+  'home.features.sdi.title': 'SDI/PADI Dive Center',
+  'home.features.sdi.description': 'Professional guides with diving and teaching experience in Mexican Caribbean waters.',
   'home.features.equipment.title': 'Modern Equipment',
   'home.features.equipment.description': 'Well-maintained, top-quality diving gear for your safety and comfort.',
   'home.features.boutique.title': 'Boutique Dive Shop',
@@ -258,7 +258,7 @@ export const en = {
   'contact.form.email': 'Email',
   'contact.form.email.placeholder': 'john@example.com',
   'contact.form.phone': 'Phone',
-  'contact.form.phone.placeholder': '+52 983 123 4567',
+  'contact.form.phone.placeholder': '+52 443 236 2684',
   'contact.form.language': 'Preferred Language',
   'contact.form.language.english': 'English',
   'contact.form.language.spanish': 'Spanish',
@@ -292,6 +292,8 @@ export const en = {
   'contact.info.hours': 'Business Hours',
   'contact.info.hours.value': 'Monday - Sunday: 9:00 AM - 7:00 PM',
   'contact.info.social': 'Follow Us',
+  'contact.info.facebook': 'Facebook',
+  'contact.info.facebook.page': 'Amigos del Mar Mahahual',
   
   'contact.map.title': 'Find Us',
   

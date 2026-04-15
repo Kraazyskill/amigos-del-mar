@@ -18,7 +18,7 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://www.facebook.com/amigosdelmarmahahual/', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/amigosdelmarmahahual', label: 'Facebook' },
     { icon: Instagram, href: 'https://www.instagram.com/amigosdelmarscuba?igsh=NWpyOHY1NWNyYmEy', label: 'Instagram' },
     { icon: Youtube, href: 'https://youtube.com/@amigosdelmarmahahual4846?si=YXDxMfF4ca3Yavn5', label: 'YouTube' },
   ]
@@ -78,11 +78,11 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={20} className="text-ocean-turquoise mt-0.5" style={{ flexShrink: 0 }} />
                 <a
-                  href="tel:+529841516758"
+                  href="tel:+524432362684"
                   className="text-gray-300 hover:text-ocean-turquoise transition-colors text-sm"
                   style={{ wordBreak: 'break-all' }}
                 >
-                  +52 984-151-6758
+                  +52 443 236 2684
                 </a>
               </li>
               <li className="flex items-start gap-3">
