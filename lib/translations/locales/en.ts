@@ -46,7 +46,7 @@ export const en = {
   
   // Home Page - Features
   'home.features.title': 'Why Dive With Us',
-  'home.features.sdi.title': 'SDI/PADI Dive Center',
+  'home.features.sdi.title': 'SDI/PADI Instructors',
   'home.features.sdi.description': 'Professional guides with diving and teaching experience in Mexican Caribbean waters.',
   'home.features.equipment.title': 'Modern Equipment',
   'home.features.equipment.description': 'Well-maintained, top-quality diving gear for your safety and comfort.',

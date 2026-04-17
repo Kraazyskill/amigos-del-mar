@@ -46,7 +46,7 @@ export const es = {
   
   // Página de Inicio - Características
   'home.features.title': 'Por Qué Bucear Con Nosotros',
-  'home.features.sdi.title': 'Centro de buceo SDI/PADI',
+  'home.features.sdi.title': 'Instructores SDI/PADI',
   'home.features.sdi.description': 'Guías profesionales con experiencia en buceo y enseñanza en aguas del Caribe Mexicano.',
   'home.features.equipment.title': 'Equipo Moderno',
   'home.features.equipment.description': 'Equipo de buceo de alta calidad y bien mantenido para tu seguridad y comodidad.',
